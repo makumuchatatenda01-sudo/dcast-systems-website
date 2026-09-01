@@ -1,0 +1,162 @@
+/* DCAST HOME APPROVED HERO — 20260826-150509 */
+body .dcast-home-approved-hero{
+  position:relative;
+  min-height:clamp(680px,88vh,900px);
+  display:flex;
+  align-items:center;
+  padding:118px 0 72px;
+  overflow:hidden;
+  color:#fff;
+}
+body .dcast-home-approved-hero .hero-bg{
+  position:absolute!important;
+  inset:0!important;
+  background-image:url('/assets/images/dcast-home-approved-hd-20260826-150509.webp')!important;
+  background-position:center 36%!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  filter:none!important;
+  transform:none!important;
+  transition:none!important;
+  will-change:auto!important;
+}
+body .dcast-home-approved-hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(90deg,rgba(5,15,30,.91) 0%,rgba(5,15,30,.79) 28%,rgba(5,15,30,.56) 45%,rgba(5,15,30,.18) 66%,rgba(5,15,30,.03) 82%);
+  pointer-events:none;
+}
+body .dcast-home-approved-hero>.container{
+  position:relative;
+  z-index:2;
+  width:min(1180px,calc(100% - 64px));
+  margin:0 auto;
+  opacity:1!important;
+  transform:none!important;
+  max-width:none;
+}
+body .dcast-home-approved-hero .hero-kicker{
+  display:block;
+  margin:0 0 22px;
+  padding:0;
+  border:0;
+  background:none;
+  box-shadow:none;
+  backdrop-filter:none;
+  color:#58e0ad;
+  font-family:'Jost',sans-serif;
+  font-size:clamp(.76rem,.95vw,.92rem);
+  font-weight:600;
+  letter-spacing:.24em;
+  line-height:1.4;
+  text-transform:uppercase;
+}
+body .dcast-home-approved-hero .home-hero-main{
+  max-width:780px;
+  margin:0;
+  color:#fff;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(3.7rem,5.7vw,6.15rem);
+  font-weight:700;
+  line-height:.92;
+  letter-spacing:-.035em;
+  text-shadow:0 5px 28px rgba(0,0,0,.42);
+}
+body .dcast-home-approved-hero .home-hero-main em{
+  color:#49d59f;
+  font-style:normal;
+}
+body .dcast-home-approved-hero .home-hero-copy{
+  max-width:610px;
+  margin:24px 0 30px;
+  color:#eef4f7;
+  font-family:'Jost',sans-serif;
+  font-size:clamp(1rem,1.22vw,1.16rem);
+  font-weight:400;
+  line-height:1.58;
+  text-shadow:0 2px 14px rgba(0,0,0,.4);
+}
+body .dcast-home-approved-hero .hero-actions{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+body .dcast-home-approved-hero .hero-actions .btn{
+  min-height:58px;
+  padding:0 30px;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  font-size:.98rem;
+  font-weight:700;
+}
+body .dcast-home-approved-hero .hero-actions .btn-green{
+  background:#0cad70;
+  border:1px solid #0cad70;
+  color:#fff;
+  box-shadow:0 12px 30px rgba(12,173,112,.24);
+}
+body .dcast-home-approved-hero .hero-actions .btn-outline{
+  background:rgba(8,20,37,.2);
+  border:1.5px solid rgba(255,255,255,.9);
+  color:#fff;
+  backdrop-filter:blur(3px);
+}
+body .dcast-home-approved-hero .hero-actions .btn:hover{
+  transform:translateY(-2px);
+}
+
+@media (max-width:899px){
+  body .dcast-home-approved-hero{
+    min-height:100svh;
+    align-items:flex-end;
+    padding:112px 0 54px;
+  }
+  body .dcast-home-approved-hero .hero-bg{
+    background-position:66% center!important;
+  }
+  body .dcast-home-approved-hero::before{
+    background:linear-gradient(180deg,rgba(4,13,26,.12) 0%,rgba(4,13,26,.18) 32%,rgba(4,13,26,.7) 66%,rgba(4,13,26,.96) 100%);
+  }
+  body .dcast-home-approved-hero>.container{
+    width:min(92%,620px);
+    margin:0 auto;
+  }
+  body .dcast-home-approved-hero .hero-kicker{
+    margin-bottom:14px;
+    font-size:.7rem;
+    letter-spacing:.16em;
+  }
+  body .dcast-home-approved-hero .home-hero-main{
+    max-width:100%;
+    font-size:clamp(3rem,13vw,5rem);
+    line-height:.94;
+  }
+  body .dcast-home-approved-hero .home-hero-copy{
+    margin:18px 0 24px;
+    max-width:34rem;
+    font-size:.98rem;
+  }
+  body .dcast-home-approved-hero .hero-actions{
+    width:100%;
+  }
+  body .dcast-home-approved-hero .hero-actions .btn{
+    min-height:54px;
+    padding:0 22px;
+  }
+}
+
+@media (max-width:520px){
+  body .dcast-home-approved-hero .hero-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  body .dcast-home-approved-hero .hero-actions .btn{
+    width:100%;
+  }
+}

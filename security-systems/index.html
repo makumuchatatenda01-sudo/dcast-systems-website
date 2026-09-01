@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Systems | DCAST Systems</title>
+<meta name="description" content="Explore DCAST CCTV, alarm, access-control, electric fencing, intercom and security-system services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+/* =========================================================
+   DCAST PREMIUM HERO FADER REFINEMENT V2
+   softer top/bottom blends with premium cinematic feathering
+   ========================================================= */
+:root{
+  --dcast-hero-blend-bg: #eef0f4;
+}
+
+body,
+.dcast-current-subpage{
+  background: var(--dcast-hero-blend-bg) !important;
+}
+
+.dcast-current-subpage .dcast-page-banner,
+.dcast-current-subpage .about-hero,
+.dcast-current-subpage .dcast-blurry-photo-hero,
+.dcast-current-subpage .dcast-final-photo-hero{
+  position: relative !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  z-index: 1 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.dcast-current-subpage .dcast-page-banner > .container,
+.dcast-current-subpage .about-hero > .container,
+.dcast-current-subpage .dcast-page-banner > .dcast-final-photo-layer,
+.dcast-current-subpage .dcast-page-banner > .dcast-final-photo-overlay,
+.dcast-current-subpage .dcast-page-banner > .dcast-blurry-photo-layer,
+.dcast-current-subpage .dcast-page-banner > .dcast-blurry-photo-overlay{
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.dcast-current-subpage .dcast-page-banner .dcast-edge-fade-top,
+.dcast-current-subpage .about-hero .dcast-edge-fade-top{
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 108px !important;
+  z-index: 4 !important;
+  pointer-events: none !important;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(238,240,244,1.00) 0%,
+      rgba(238,240,244,0.98) 10%,
+      rgba(238,240,244,0.92) 22%,
+      rgba(238,240,244,0.78) 38%,
+      rgba(238,240,244,0.56) 56%,
+      rgba(238,240,244,0.28) 76%,
+      rgba(238,240,244,0.00) 100%
+    ) !important;
+  backdrop-filter: blur(1.5px) !important;
+}
+
+.dcast-current-subpage .dcast-page-banner .dcast-edge-fade-bottom,
+.dcast-current-subpage .about-hero .dcast-edge-fade-bottom{
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: 126px !important;
+  z-index: 4 !important;
+  pointer-events: none !important;
+  background:
+    linear-gradient(
+      to top,
+      rgba(238,240,244,1.00) 0%,
+      rgba(238,240,244,0.98) 10%,
+      rgba(238,240,244,0.92) 22%,
+      rgba(238,240,244,0.78) 38%,
+      rgba(238,240,244,0.56) 58%,
+      rgba(238,240,244,0.26) 78%,
+      rgba(238,240,244,0.00) 100%
+    ) !important;
+  backdrop-filter: blur(1.5px) !important;
+}
+
+.dcast-current-subpage .dcast-page-banner .dcast-edge-fade-soft,
+.dcast-current-subpage .about-hero .dcast-edge-fade-soft{
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.00) 32%),
+    radial-gradient(circle at 50% 100%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.00) 34%) !important;
+}
+
+.dcast-current-subpage > section:first-of-type{
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.dcast-current-subpage .dcast-page-banner + section,
+.dcast-current-subpage .about-hero + section{
+  position: relative !important;
+  z-index: 1 !important;
+  margin-top: -14px !important;
+  padding-top: 72px !important;
+  border-top: none !important;
+}
+
+@media (max-width: 768px){
+  .dcast-current-subpage .dcast-page-banner .dcast-edge-fade-top,
+  .dcast-current-subpage .about-hero .dcast-edge-fade-top{
+    height: 72px !important;
+  }
+
+  .dcast-current-subpage .dcast-page-banner .dcast-edge-fade-bottom,
+  .dcast-current-subpage .about-hero .dcast-edge-fade-bottom{
+    height: 84px !important;
+  }
+
+  .dcast-current-subpage .dcast-page-banner + section,
+  .dcast-current-subpage .about-hero + section{
+    margin-top: -8px !important;
+    padding-top: 56px !important;
+  }
+}
+
+
+:root{
+  --blue:#2e3480;
+  --blue-dark:#1d2159;
+  --blue-deep:#12143a;
+  --green:#0d9a5c;
+  --green-dark:#0a7a49;
+  --ink:#1c2333;
+  --grey:#5c6675;
+  --line:#e4e8ee;
+  --bg:#f6f8fa;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--white);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:0 auto}
+h1,h2,h3{font-family:'Playfair Display',serif}
+
+/* ===== Floating Dynamic-Island Nav ===== */
+.navwrap{position:fixed;top:14px;left:0;right:0;z-index:1000;display:flex;justify-content:center;padding:0 12px;transition:top .3s}
+.island{display:flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.9);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(46,52,128,.1);border-radius:999px;padding:.45rem .55rem .45rem 1rem;box-shadow:0 10px 40px rgba(18,20,58,.18);max-width:1100px;width:100%;transition:box-shadow .3s,background .3s}
+.navwrap.scrolled .island{box-shadow:0 14px 50px rgba(18,20,58,.28);background:rgba(255,255,255,.97)}
+.brand{display:flex;align-items:center;gap:.55rem;flex-shrink:0;margin-right:auto}
+.brand img{height:38px;width:auto;image-rendering:-webkit-optimize-contrast;filter:drop-shadow(0 1px 2px rgba(18,20,58,.15))}
+.brand-name{line-height:1.05;display:flex;flex-direction:column}
+.brand-name .n1{font-weight:700;font-size:1.05rem;letter-spacing:.05em;color:var(--green)}
+.brand-name .n1 b{color:var(--blue)}
+.brand-name .n2{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);font-weight:500}
+nav ul{display:flex;list-style:none;gap:.2rem;align-items:center}
+nav a{font-weight:500;font-size:.9rem;color:var(--ink);padding:.55rem 1rem;border-radius:999px;transition:all .25s;white-space:nowrap}
+nav a:hover,nav a.active{background:rgba(13,154,92,.1);color:var(--green-dark)}
+.btn{display:inline-block;padding:.8rem 1.9rem;border-radius:999px;font-weight:600;font-size:.9rem;letter-spacing:.04em;transition:all .3s;cursor:pointer;border:none}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 10px 22px rgba(13,154,92,.35)}
+.btn-outline{border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn-outline:hover{background:#fff;color:var(--blue)}
+.island .cta-btn{padding:.65rem 1.5rem;flex-shrink:0}
+.burger{display:none;background:var(--blue);border:none;cursor:pointer;flex-direction:column;gap:5px;padding:12px;border-radius:999px;flex-shrink:0}
+.burger span{width:20px;height:2px;background:#fff;border-radius:2px;transition:all .3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{position:fixed;top:80px;left:12px;right:12px;z-index:999;background:rgba(255,255,255,.98);backdrop-filter:blur(18px);border-radius:24px;box-shadow:0 20px 60px rgba(18,20,58,.3);padding:1rem;display:none;flex-direction:column;gap:.2rem;border:1px solid rgba(46,52,128,.1)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:.9rem 1.2rem;border-radius:14px;font-weight:500;color:var(--ink)}
+.mobile-menu a:hover{background:rgba(13,154,92,.1);color:var(--green-dark)}
+.mobile-menu .btn{text-align:center;margin-top:.4rem}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;padding-top:90px}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1920&auto=format&fit=crop') center/cover;filter:brightness(.9)}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(18,20,58,.94) 30%,rgba(29,33,89,.72) 60%,rgba(13,154,92,.28))}
+.hero .container{position:relative;z-index:2}
+.hero-kicker{display:inline-block;font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;color:#7ee6b4;margin-bottom:1.4rem;font-weight:600}
+.hero-title{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-bottom:.6rem}
+.hero-title img{height:clamp(56px,7vw,96px);width:auto;image-rendering:-webkit-optimize-contrast;filter:drop-shadow(0 6px 18px rgba(0,0,0,.45)) brightness(1.12)}
+.hero-title h1{font-size:clamp(2.8rem,7vw,5.4rem);line-height:1.02;font-weight:800;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.5);letter-spacing:.02em}
+.hero-title h1 em{font-style:normal;color:#67d9a4}
+.hero-sub{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,2.6vw,2.1rem);color:#eef1fb;font-weight:600;max-width:26ch;line-height:1.3;text-shadow:0 3px 16px rgba(0,0,0,.55);margin-bottom:2rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-msg{position:absolute;right:4%;bottom:120px;z-index:2;max-width:420px;text-align:right;font-size:1.05rem;line-height:1.7;color:#f0f3fc;font-weight:400;background:linear-gradient(135deg,rgba(18,20,58,.55),rgba(13,154,92,.25));backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:none;border-radius:14px;padding:1.3rem 1.5rem;box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.hero-msg .hl{color:#7ee6b4;font-weight:700}
+.hero-strip{position:absolute;bottom:0;left:0;right:0;z-index:2;background:rgba(255,255,255,.07);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.14)}
+.hero-strip .container{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.3rem 0}
+.stat{text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.stat:last-child{border-right:none}
+.stat b{display:block;font-size:1.9rem;font-weight:700;color:#7ee6b4;font-family:'Playfair Display',serif}
+.stat span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#c3c8e2}
+
+/* ===== Sections ===== */
+section{padding:5.5rem 0}
+.sec-head{max-width:640px;margin-bottom:3.2rem}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.kicker{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--green);font-weight:600;display:inline-flex;align-items:center;gap:.6rem}
+.kicker::before{content:'';width:30px;height:1.5px;background:var(--green)}
+.sec-head.center .kicker::after{content:'';width:30px;height:1.5px;background:var(--green)}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--blue-dark);margin:.7rem 0 .8rem;line-height:1.2}
+.sec-head p{color:var(--grey)}
+
+/* ===== About ===== */
+.about{background:var(--bg)}
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:4rem;align-items:center}
+.about-imgs{position:relative}
+.about-imgs .main{border-radius:6px;height:460px;width:100%;object-fit:cover;box-shadow:0 24px 60px rgba(18,20,58,.18)}
+.about-imgs .badge{position:absolute;bottom:-26px;right:-14px;background:var(--blue);color:#fff;padding:1.4rem 1.6rem;border-radius:6px;box-shadow:0 16px 40px rgba(18,20,58,.3);border-bottom:4px solid var(--green)}
+.about-imgs .badge b{font-size:2.2rem;font-family:'Playfair Display',serif;color:#7ee6b4}
+.about-imgs .badge span{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+.about-body h2{font-size:clamp(1.8rem,3vw,2.5rem);color:var(--blue-dark);line-height:1.2;margin:.7rem 0 1rem}
+.about-body p{color:var(--grey);margin-bottom:1rem}
+.checks{list-style:none;margin:1.4rem 0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.checks li{display:flex;gap:.6rem;align-items:flex-start;font-weight:500;font-size:.95rem}
+.checks li::before{content:'✓';color:#fff;background:var(--green);width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:.7rem;flex-shrink:0;margin-top:3px}
+
+/* ===== Services ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.svc{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:transform .35s,box-shadow .35s;position:relative}
+.svc:hover{transform:translateY(-8px);box-shadow:0 22px 50px rgba(18,20,58,.14)}
+.svc .ph{height:210px;overflow:hidden;position:relative}
+.svc .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.svc:hover .ph img{transform:scale(1.08)}
+.svc .ph::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(18,20,58,.55),transparent 55%)}
+.svc .num{position:absolute;top:14px;left:14px;z-index:2;background:rgba(255,255,255,.92);color:var(--blue);font-weight:700;font-size:.8rem;padding:.25rem .6rem;border-radius:3px;letter-spacing:.1em}
+.svc .body{padding:1.5rem 1.5rem 1.7rem;border-top:3px solid var(--green)}
+.svc h3{font-size:1.18rem;color:var(--blue-dark);margin-bottom:.5rem}
+.svc p{color:var(--grey);font-size:.92rem}
+.svc .more{display:inline-flex;align-items:center;gap:.4rem;margin-top:1rem;font-weight:600;font-size:.85rem;color:var(--green);letter-spacing:.05em}
+.svc .more:hover{gap:.7rem}
+
+/* ===== Systems band ===== */
+.systems{position:relative;color:#fff;background:url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=1920&auto=format&fit=crop') center/cover fixed}
+.systems::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(18,20,58,.95),rgba(29,33,89,.86))}
+.systems .container{position:relative;z-index:2}
+.systems .sec-head h2{color:#fff}
+.systems .sec-head p{color:#c3c8e2}
+.sys-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.sys{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:1.8rem 1.5rem;transition:all .3s;backdrop-filter:blur(6px)}
+.sys:hover{background:rgba(13,154,92,.16);border-color:var(--green);transform:translateY(-6px)}
+.sys .ico{font-size:1.9rem;margin-bottom:.9rem}
+.sys h3{font-family:'Jost',sans-serif;font-size:1.02rem;font-weight:600;margin-bottom:.4rem;color:#fff}
+.sys p{font-size:.86rem;color:#c3c8e2;font-weight:300}
+
+/* ===== Why us ===== */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem}
+.why{padding:2rem 1.6rem;border-radius:6px;border:1px solid var(--line);transition:all .3s;background:#fff}
+.why:hover{border-color:var(--green);box-shadow:0 16px 40px rgba(18,20,58,.1)}
+.why .ico{width:54px;height:54px;border-radius:6px;background:linear-gradient(135deg,var(--blue),var(--blue-dark));color:#7ee6b4;display:grid;place-items:center;font-size:1.4rem;margin-bottom:1.1rem}
+.why h3{font-family:'Jost',sans-serif;font-size:1.08rem;font-weight:600;color:var(--blue-dark);margin-bottom:.4rem}
+.why p{font-size:.92rem;color:var(--grey)}
+
+/* ===== CTA ===== */
+.cta{position:relative;color:#fff;background:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop') center/cover fixed;padding:5rem 0}
+.cta::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,122,73,.94),rgba(18,20,58,.9))}
+.cta .container{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
+.cta h2{font-size:clamp(1.6rem,3vw,2.3rem);max-width:24ch;line-height:1.25}
+.cta .btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-white{background:#fff;color:var(--blue-dark)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+
+/* ===== Contact ===== */
+.contact{background:var(--bg)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:3.5rem;align-items:start}
+.c-item{display:flex;gap:1rem;margin-bottom:1.6rem}
+.c-item .ico{width:48px;height:48px;flex-shrink:0;border-radius:6px;background:var(--blue);color:#7ee6b4;display:grid;place-items:center;font-size:1.15rem}
+.c-item h4{font-size:.98rem;color:var(--blue-dark)}
+.c-item p,.c-item a{color:var(--grey);font-size:.92rem}
+.c-item a:hover{color:var(--green)}
+.form-card{background:#fff;border-radius:6px;padding:2.4rem;box-shadow:0 20px 50px rgba(18,20,58,.1);border-top:4px solid var(--green)}
+.form-card h3{color:var(--blue-dark);margin-bottom:1.4rem;font-size:1.4rem}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-card input,.form-card select,.form-card textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--line);border-radius:4px;font-family:inherit;font-size:.92rem;background:var(--bg);outline:none;transition:border .2s}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{border-color:var(--green)}
+.form-card textarea{resize:vertical;min-height:110px;margin-bottom:1rem}
+
+/* ===== Footer ===== */
+footer{background:var(--blue-deep);color:#aeb3d4;padding:4rem 0 0;font-size:.9rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.5rem;padding-bottom:3rem}
+footer h4{color:#fff;font-family:'Jost',sans-serif;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.1rem}
+footer ul{list-style:none}
+footer li{margin-bottom:.55rem}
+footer a:hover{color:#7ee6b4}
+.foot-logo{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.foot-logo img{height:42px;width:auto;image-rendering:-webkit-optimize-contrast;filter:brightness(1.15)}
+.foot-logo .brand-name .n1{color:#7ee6b4}
+.foot-logo .brand-name .n1 b{color:#fff}
+.foot-logo .brand-name .n2{color:#aeb3d4}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding:1.2rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.82rem}
+.foot-bottom b{color:#7ee6b4}
+
+/* ===== Reveal ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== Responsive ===== */
+@media(max-width:1080px){
+  nav ul{gap:0}
+  nav a{padding:.55rem .7rem;font-size:.85rem}
+}
+@media(max-width:980px){
+  .svc-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .sys-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hero-strip .container{grid-template-columns:repeat(2,1fr)}
+  .stat{border:none;padding:.4rem 0}
+  nav{display:none}
+  .island .cta-btn{display:none}
+  .burger{display:flex}
+  .island{max-width:520px}
+}
+@media(max-width:1200px){
+  .hero-msg{position:static;max-width:560px;text-align:left;margin:2.2rem auto 0;margin-left:4%}
+}
+@media(max-width:720px){
+  .svc-grid,.why-grid,.sys-grid,.frow,.checks{grid-template-columns:1fr}
+  .navwrap{top:10px}
+  .brand img{height:32px}
+  .brand-name .n1{font-size:.95rem}
+  .hero{min-height:100svh;padding-bottom:2rem}
+  .hero-msg{margin:2rem 4% 7rem;font-size:.98rem}
+  .hero-title{gap:.8rem}
+}
+
+/* DCAST_FSS_WIDGET_20260803 */
+:root {
+  --fss-size: 46px;
+  --fss-icon: 20px;
+  --fss-gap: 8px;
+}
+
+.fss-widget,
+.fss-widget * {
+  box-sizing: border-box;
+}
+
+.fss-widget {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: env(safe-area-inset-right, 0);
+}
+
+.fss-toggle {
+  position: relative;
+  width: var(--fss-size);
+  height: var(--fss-size);
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1877f2;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  box-shadow: -2px 2px 8px rgba(0,0,0,.25);
+  transition: background .25s ease;
+}
+
+.fss-toggle:hover,
+.fss-toggle:focus-visible {
+  background: #145dc4;
+}
+
+.fss-toggle:focus-visible,
+.fss-icon:focus-visible {
+  outline: 3px solid rgba(126,230,180,.95);
+  outline-offset: 2px;
+}
+
+.fss-toggle svg {
+  width: var(--fss-icon);
+  height: var(--fss-icon);
+  fill: #fff;
+  transition: transform .3s ease;
+}
+
+.fss-widget.open .fss-toggle svg {
+  transform: rotate(90deg);
+}
+
+.fss-tooltip {
+  position: absolute;
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.3;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+
+.fss-toggle:hover .fss-tooltip,
+.fss-toggle:focus-visible .fss-tooltip {
+  opacity: 1;
+}
+
+.fss-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fss-gap);
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(20px);
+  transition:
+    max-height .35s ease,
+    opacity .25s ease,
+    transform .25s ease,
+    margin .25s ease;
+}
+
+.fss-widget.open .fss-panel {
+  max-height: 80vh;
+  max-height: 80dvh;
+  margin-top: var(--fss-gap);
+  overflow-y: auto;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fss-icon {
+  width: var(--fss-size);
+  height: var(--fss-size);
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0 0 8px;
+  text-decoration: none;
+  box-shadow: -2px 2px 8px rgba(0,0,0,.2);
+  transition: transform .2s ease, filter .2s ease;
+}
+
+.fss-icon:hover,
+.fss-icon:focus-visible {
+  transform: translateX(-6px);
+  filter: brightness(1.1);
+}
+
+.fss-icon svg {
+  width: var(--fss-icon);
+  height: var(--fss-icon);
+  fill: #fff;
+}
+
+.fss-facebook {
+  background: #3b5998;
+}
+
+.fss-twitter {
+  background: #000;
+}
+
+.fss-whatsapp {
+  background: #25d366;
+}
+
+.fss-linkedin {
+  background: #0077b5;
+}
+
+.fss-telegram {
+  background: #229ed9;
+}
+
+.fss-email {
+  background: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fss-size: 42px;
+    --fss-icon: 18px;
+    --fss-gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fss-size: 44px;
+    --fss-icon: 18px;
+    --fss-gap: 6px;
+  }
+
+  .fss-tooltip {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fss-toggle svg,
+  .fss-panel,
+  .fss-icon {
+    transition: none;
+  }
+}
+
+
+/* DCAST_MOBILE_HERO_OPTIMISATION_START */
+@media (max-width: 899px) {
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    position: relative;
+    display: flex;
+    min-height: 100svh;
+    height: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 112px 0 calc(24px + env(safe-area-inset-bottom));
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    background-position: center center !important;
+    background-size: cover !important;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(18,20,58,.16) 0%,
+        rgba(18,20,58,.28) 35%,
+        rgba(10,15,32,.66) 70%,
+        rgba(6,10,24,.92) 100%
+      ) !important;
+  }
+
+  .hero > .container {
+    position: relative;
+    z-index: 3;
+    width: min(92%, 560px);
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .hero-kicker {
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
+    align-items: center;
+    gap: .62rem;
+    margin: 0 0 1rem;
+    padding: .58rem .78rem;
+    border: 1px solid rgba(126,230,180,.38);
+    border-radius: 999px;
+    background: rgba(18,20,58,.68);
+    color: #9af0c7;
+    font-size: clamp(.66rem, 2.8vw, .76rem);
+    line-height: 1.45;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    white-space: normal;
+    text-shadow: 0 2px 12px rgba(0,0,0,.5);
+    box-shadow: 0 10px 28px rgba(0,0,0,.18);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+  }
+
+  .hero-title {
+    display: block;
+    width: 100%;
+    margin: 0 0 .7rem;
+  }
+
+  .hero-title img {
+    display: none !important;
+  }
+
+  .hero-title h1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    color: #fff;
+    font-size: clamp(3.2rem, 15vw, 5.2rem);
+    font-weight: 800;
+    line-height: .91;
+    letter-spacing: -.025em;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-shadow: 0 5px 24px rgba(0,0,0,.48);
+  }
+
+  .hero-title h1 em {
+    display: block;
+    margin-top: .08em;
+    color: #4ee6a8;
+    font-style: normal;
+  }
+
+  .hero-sub {
+    width: 100%;
+    max-width: 22ch;
+    margin: .35rem 0 0;
+    color: #fff;
+    font-size: clamp(1.22rem, 5.4vw, 1.65rem);
+    font-weight: 600;
+    line-height: 1.27;
+    text-shadow: 0 3px 18px rgba(0,0,0,.62);
+  }
+
+  .hero-actions {
+    width: 100%;
+    margin-top: 1.55rem;
+    display: flex;
+    flex-direction: column;
+    gap: .78rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .95rem 1.25rem;
+    border-radius: 999px;
+    font-size: .96rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .hero-actions .btn-green {
+    box-shadow: 0 12px 30px rgba(13,154,92,.34);
+  }
+
+  .hero-actions .btn-outline {
+    background: rgba(18,20,58,.36);
+    border-color: rgba(255,255,255,.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .hero-msg {
+    display: none !important;
+  }
+
+  .hero-strip {
+    position: relative;
+    inset: auto;
+    z-index: 3;
+    width: min(92%, 560px);
+    margin: 1.4rem auto 0;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 18px;
+    background: rgba(18,20,58,.52);
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .hero-strip .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    padding: .65rem;
+  }
+
+  .hero-strip .stat {
+    min-width: 0;
+    padding: .72rem .35rem;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+
+  .hero-strip .stat:nth-last-child(-n+2) {
+    border-bottom: 0;
+  }
+
+  .hero-strip .stat b {
+    font-size: 1.42rem;
+    line-height: 1.1;
+  }
+
+  .hero-strip .stat span {
+    display: block;
+    margin-top: .28rem;
+    font-size: .62rem;
+    line-height: 1.35;
+    letter-spacing: .1em;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .hero {
+    padding-top: 104px;
+  }
+
+  .hero > .container,
+  .hero-strip {
+    width: 90%;
+  }
+
+  .hero-title h1 {
+    font-size: clamp(2.8rem, 14.5vw, 4rem);
+  }
+
+  .hero-sub {
+    font-size: 1.12rem;
+  }
+
+  .hero-actions .btn {
+    min-height: 50px;
+    padding: .85rem 1rem;
+    font-size: .9rem;
+  }
+}
+/* DCAST_MOBILE_HERO_OPTIMISATION_END */
+
+
+/* DCAST_MOBILE_HERO_CLEANUP_20260803 */
+@media (max-width: 899px) {
+
+  .hero-kicker {
+    width: auto !important;
+    max-width: min(100%, 360px) !important;
+    margin: 0 0 1rem !important;
+    padding: .82rem 1rem !important;
+    border: 1px solid rgba(255,255,255,.18) !important;
+    border-radius: 18px !important;
+    background: rgba(20,24,58,.68) !important;
+    color: #ffffff !important;
+    font-size: clamp(.76rem, 3.2vw, .9rem) !important;
+    font-weight: 800 !important;
+    line-height: 1.4 !important;
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,.4) !important;
+    box-shadow: 0 10px 24px rgba(0,0,0,.18) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+
+  .hero-kicker::before {
+    background: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(255,255,255,.14) !important;
+  }
+
+  .hero-strip {
+    display: none !important;
+  }
+}
+
+
+/* DCAST_OFFICIAL_SOCIAL_PROFILES_20260803 */
+
+.dcast-profile-widget,
+.dcast-profile-widget * {
+  box-sizing: border-box;
+}
+
+.dcast-profile-widget {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translateY(-50%);
+  padding-right: env(safe-area-inset-right, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dcast-profile-toggle {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  background: #2e3480;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: -3px 4px 14px rgba(18,20,58,.28);
+  transition:
+    background .22s ease,
+    transform .22s ease;
+}
+
+.dcast-profile-toggle:hover,
+.dcast-profile-toggle:focus-visible {
+  background: #1d2159;
+}
+
+.dcast-profile-toggle:focus-visible,
+.dcast-profile-link:focus-visible {
+  outline: 3px solid #67d9a4;
+  outline-offset: 2px;
+}
+
+.dcast-profile-toggle svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+  transition: transform .28s ease;
+}
+
+.dcast-profile-widget.open .dcast-profile-toggle svg {
+  transform: rotate(90deg);
+}
+
+.dcast-profile-tooltip {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 9px);
+  transform: translateY(-50%);
+  padding: 6px 10px;
+  border-radius: 5px;
+  background: #12143a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .2s ease, visibility .2s ease;
+}
+
+.dcast-profile-toggle:hover .dcast-profile-tooltip,
+.dcast-profile-toggle:focus-visible .dcast-profile-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dcast-profile-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(18px);
+  transition:
+    max-height .3s ease,
+    margin .25s ease,
+    opacity .22s ease,
+    transform .22s ease;
+}
+
+.dcast-profile-widget.open .dcast-profile-panel {
+  max-height: 420px;
+  margin-top: 8px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dcast-profile-link {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: -3px 4px 12px rgba(18,20,58,.22);
+  transition:
+    transform .2s ease,
+    filter .2s ease;
+}
+
+.dcast-profile-link:hover,
+.dcast-profile-link:focus-visible {
+  transform: translateX(-6px);
+  filter: brightness(1.08);
+}
+
+.dcast-profile-link svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+  fill: currentColor;
+}
+
+.dcast-profile-name {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 46px;
+  min-width: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border-radius: 8px 0 0 8px;
+  background: inherit;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(8px);
+  transition:
+    opacity .2s ease,
+    visibility .2s ease,
+    transform .2s ease;
+  pointer-events: none;
+}
+
+.dcast-profile-link:hover .dcast-profile-name,
+.dcast-profile-link:focus-visible .dcast-profile-name {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.dcast-profile-facebook {
+  background: #1877f2;
+}
+
+.dcast-profile-instagram {
+  background:
+    linear-gradient(
+      135deg,
+      #833ab4 0%,
+      #c13584 35%,
+      #e1306c 58%,
+      #fd1d1d 75%,
+      #fcb045 100%
+    );
+}
+
+.dcast-profile-x {
+  background: #050505;
+}
+
+.dcast-profile-linkedin {
+  background: #0a66c2;
+}
+
+.dcast-profile-whatsapp {
+  background: #25d366;
+}
+
+@media (max-width: 720px) {
+  .dcast-profile-toggle,
+  .dcast-profile-link {
+    width: 44px;
+    height: 44px;
+  }
+
+  .dcast-profile-link svg,
+  .dcast-profile-toggle svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .dcast-profile-name,
+  .dcast-profile-tooltip {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dcast-profile-toggle,
+  .dcast-profile-toggle svg,
+  .dcast-profile-panel,
+  .dcast-profile-link,
+  .dcast-profile-name {
+    transition: none;
+  }
+}
+
+
+/* DCAST_BOOTSTRAP_ICON_REPAIR_20260803 */
+
+.dcast-profile-link .dcast-bootstrap-icon,
+.dcast-profile-toggle .dcast-bootstrap-icon {
+  width: 21px;
+  height: 21px;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+}
+
+.c-item .dcast-contact-bootstrap-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  .dcast-profile-link .dcast-bootstrap-icon,
+  .dcast-profile-toggle .dcast-bootstrap-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .c-item .dcast-contact-bootstrap-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+/* DCAST_CURRENT_TEMPLATE_SUBPAGES_20260804 */
+
+.dcast-current-subpage {
+  min-height: 70vh;
+  padding-top: 112px;
+  background: #f6f8fb;
+}
+
+.dcast-page-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 88px 0 74px;
+  background:
+    radial-gradient(
+      circle at 82% 20%,
+      rgba(103,217,164,.18),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #111438 0%,
+      #232967 65%,
+      #087e62 145%
+    );
+}
+
+.dcast-page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .16;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.12) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.12) 1px,
+      transparent 1px
+    );
+  background-size: 64px 64px;
+}
+
+.dcast-page-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.dcast-page-banner span {
+  display: inline-block;
+  margin-bottom: .9rem;
+  color: #67d9a4;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.dcast-page-banner h1 {
+  max-width: 850px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.dcast-page-banner p {
+  max-width: 700px;
+  margin-top: 1.15rem;
+  color: rgba(255,255,255,.76);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.dcast-current-subpage > section:not(.dcast-page-banner) {
+  scroll-margin-top: 130px;
+}
+
+.dcast-about-details {
+  padding: 90px 0;
+  background: #111438;
+}
+
+.dcast-about-details h2 {
+  margin-bottom: 2.4rem;
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+.dcast-foundation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.dcast-foundation-card {
+  padding: 2rem;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 22px;
+  background: rgba(255,255,255,.06);
+}
+
+.dcast-foundation-card h3 {
+  margin-bottom: .9rem;
+  color: #67d9a4;
+  font-size: 1.45rem;
+}
+
+.dcast-foundation-card p,
+.dcast-foundation-card li {
+  color: rgba(255,255,255,.72);
+  line-height: 1.75;
+}
+
+.dcast-foundation-card ul {
+  display: grid;
+  gap: .55rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.dcast-growth-clients {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.dcast-growth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.dcast-growth-card {
+  padding: 2rem;
+  border: 1px solid #e4e8ef;
+  border-radius: 22px;
+  background: #f7f9fb;
+}
+
+.dcast-growth-card h3 {
+  margin-bottom: .9rem;
+  color: #111438;
+  font-size: 1.45rem;
+}
+
+.dcast-growth-card p,
+.dcast-growth-card li {
+  color: #62697c;
+  line-height: 1.75;
+}
+
+.dcast-growth-card ul {
+  display: grid;
+  gap: .55rem;
+  padding-left: 1.2rem;
+}
+
+.dcast-placeholder {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.dcast-placeholder-card {
+  max-width: 760px;
+  padding: 2rem;
+  border: 1px solid #e4e8ef;
+  border-radius: 22px;
+  background: #f7f9fb;
+}
+
+.dcast-placeholder-card h2 {
+  margin-bottom: .8rem;
+  color: #111438;
+}
+
+.dcast-placeholder-card p {
+  color: #62697c;
+  line-height: 1.75;
+}
+
+@media (max-width: 760px) {
+  .dcast-current-subpage {
+    padding-top: 92px;
+  }
+
+  .dcast-page-banner {
+    padding: 62px 0 58px;
+  }
+
+  .dcast-foundation-grid,
+  .dcast-growth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dcast-about-details,
+  .dcast-growth-clients,
+  .dcast-placeholder {
+    padding: 68px 0;
+  }
+}
+
+</style>
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=20260803-1503">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=20260803-1503">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=20260803-1503">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260803-1503">
+<link rel="stylesheet" href="/assets/css/visionco-footer-credit.css?v=20260804-083639">
+<link rel="stylesheet" href="/assets/css/dcast-systems-code-page-20260806-100634.css">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="dcast-systems-release" content="20260806-1302">
+<link rel="stylesheet" href="/assets/css/dcast-final-premium-polish-20260824-134615.css">
+<link rel="stylesheet" href="/assets/css/dcast-footer-text-alignment-20260824.css">
+<link rel="stylesheet" href="/assets/css/dcast-systems-hd-quality-20260824.css">
+<link rel="stylesheet" href="/assets/css/dcast-systems-np200-hero-background-v2-20260824.css">
+<link rel="stylesheet" href="/assets/css/dcast-systems-hero-gap-fix-20260824.css">
+<link rel="stylesheet" href="/assets/css/dcast-global-hero-scrollfx-20260826.css?v=20260826-144800">
+<link rel="stylesheet" href="/assets/css/dcast-global-navbar-consistency-20260830.css?v=20260830-184700">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/images/dcast-logo-mark-refined-20260830.png?v=20260830-190000">
+<link rel="shortcut icon" type="image/png" href="/assets/images/dcast-logo-mark-refined-20260830.png?v=20260830-190000">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon-20260830.png?v=20260830-190000">
+<link rel="stylesheet" href="/assets/css/dcast-logo-alignment-20260830.css?v=20260830-190000">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/dcast-favicon-white-32-20260830.png?v=20260830-191200">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/dcast-favicon-white-192-20260830.png?v=20260830-191200">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/images/dcast-favicon-white-512-20260830.png?v=20260830-191200">
+<link rel="shortcut icon" type="image/png" href="/assets/images/dcast-favicon-white-32-20260830.png?v=20260830-191200">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/dcast-apple-touch-white-180-20260830.png?v=20260830-191200">
+<link rel="manifest" href="/site.webmanifest?v=20260830-191200">
+<meta name="theme-color" content="#0A1733">
+<link rel="stylesheet" href="/assets/css/dcast-home-client-focus-20260830.css?v=20260830-192200">
+<link rel="stylesheet" href="/assets/css/dcast-systems-service-navigation-20260831.css?v=20260831-122000">
+<script src="/assets/js/dcast-systems-service-navigation-20260831.js?v=20260831-120800" defer></script>
+
+<link rel="stylesheet" href="/assets/css/dcast-client-brands-20260831.css?v=20260831-134000">
+<script src="/assets/js/dcast-client-brands-20260831.js?v=20260831-134000" defer></script>
+</head>
+<body class="dcast-systems-page">
+
+
+<!-- DCAST_OFFICIAL_SOCIAL_PROFILES_20260803 -->
+<div class="dcast-profile-widget"
+     id="dcastProfileWidget">
+
+  <div class="dcast-profile-panel"
+       id="dcastProfilePanel">
+
+    <a class="dcast-profile-link dcast-profile-facebook"
+       href="https://www.facebook.com/61557648856091"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Open DCAST Systems on Facebook">
+      <img class="dcast-bootstrap-icon" src="/assets/icons/bootstrap-icons/facebook.svg" alt="" aria-hidden="true" width="22" height="22">
+<span class="dcast-profile-name">Facebook</span>
+    </a>
+
+    <a class="dcast-profile-link dcast-profile-instagram"
+       href="https://www.instagram.com/dcast.systems/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Open DCAST Systems on Instagram">
+      <img class="dcast-bootstrap-icon" src="/assets/icons/bootstrap-icons/instagram.svg" alt="" aria-hidden="true" width="22" height="22">
+<span class="dcast-profile-name">Instagram</span>
+    </a>
+
+    <a class="dcast-profile-link dcast-profile-x"
+       href="https://x.com/Dcast_Systems"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Open DCAST Systems on X">
+      <img class="dcast-bootstrap-icon" src="/assets/icons/bootstrap-icons/twitter-x.svg" alt="" aria-hidden="true" width="22" height="22">
+<span class="dcast-profile-name">X / Twitter</span>
+    </a>
+
+    <a class="dcast-profile-link dcast-profile-linkedin"
+       href="https://www.linkedin.com/company/dcast-security-systems/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Open DCAST Security Systems on LinkedIn">
+      <img class="dcast-bootstrap-icon" src="/assets/icons/bootstrap-icons/linkedin.svg" alt="" aria-hidden="true" width="22" height="22">
+<span class="dcast-profile-name">LinkedIn</span>
+    </a>
+
+    <a class="dcast-profile-link dcast-profile-whatsapp"
+       href="https://wa.me/263783612474"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contact DCAST Systems on WhatsApp">
+      <img class="dcast-bootstrap-icon" src="/assets/icons/bootstrap-icons/whatsapp.svg" alt="" aria-hidden="true" width="22" height="22">
+<span class="dcast-profile-name">WhatsApp</span>
+    </a>
+
+  </div>
+
+  <button class="dcast-profile-toggle"
+          id="dcastProfileToggle"
+          type="button"
+          aria-controls="dcastProfilePanel"
+          aria-expanded="false"
+          aria-label="Open DCAST social media profiles">
+      <img class="dcast-bootstrap-icon" src="/assets/icons/bootstrap-icons/share-fill.svg" alt="" aria-hidden="true" width="22" height="22">
+<span class="dcast-profile-tooltip">Follow DCAST</span>
+  </button>
+
+</div>
+
+<!-- DCAST floating navigation -->
+<div class="navwrap" id="navwrap">
+  <div class="island">
+    <a href="/" class="brand">
+      <img src="/assets/images/dcast-logo-mark-refined-20260830.png?v=20260830-190000" alt="DCAST logo" width="42" height="42">
+      <span class="brand-name"><span class="n1">DCAST <b>SECURITY</b></span><span class="n2">Inspired Security Systems</span></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/" >Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/guarding-services/">Services</a></li>
+        <li class="nav-systems-menu">
+          <a href="/security-systems/" class="active">Systems <span class="nav-chevron" aria-hidden="true">⌄</span></a>
+          <div class="nav-systems-dropdown" aria-label="Security systems services">
+            <a href="/security-systems/#cctv-installation">CCTV Installation <span aria-hidden="true">→</span></a>
+            <a href="/security-systems/#access-control">Access Control <span aria-hidden="true">→</span></a>
+            <a href="/security-systems/#alarm-systems">Alarm Systems <span aria-hidden="true">→</span></a>
+            <a href="/security-systems/#electric-fence">Electric Fence <span aria-hidden="true">→</span></a>
+            <a href="/security-systems/#fibre-installation">Full Turnkey Fibre Installation <span aria-hidden="true">→</span></a>
+            <a href="/security-systems/#boomgates">Boomgates <span aria-hidden="true">→</span></a>
+            <a href="/security-systems/#mantrap-doors">Mantrap Doors <span aria-hidden="true">→</span></a>
+            <a href="/security-systems/#fire-suppression">Fire Suppression <span aria-hidden="true">→</span></a>
+            <a class="nav-systems-all" href="/security-systems/">View all systems <span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="/request-quote/" class="btn btn-green cta-btn">Request a Quote</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</div>
+<div class="mobile-menu" id="mmenu">
+  <a href="/">Home</a>
+  <a href="/about/">About Us</a>
+  <a href="/guarding-services/">Services</a>
+  <details class="mobile-systems-dropdown">
+    <summary class="active">Systems</summary>
+    <div class="mobile-systems-links">
+      <a href="/security-systems/">Systems Overview</a>
+      <a href="/security-systems/#cctv-installation">CCTV Installation</a>
+      <a href="/security-systems/#access-control">Access Control</a>
+      <a href="/security-systems/#alarm-systems">Alarm Systems</a>
+      <a href="/security-systems/#electric-fence">Electric Fence</a>
+      <a href="/security-systems/#fibre-installation">Full Turnkey Fibre Installation</a>
+      <a href="/security-systems/#boomgates">Boomgates</a>
+      <a href="/security-systems/#mantrap-doors">Mantrap Doors</a>
+      <a href="/security-systems/#fire-suppression">Fire Suppression</a>
+    </div>
+  </details>
+  <a href="/contact/">Contact</a>
+  <a href="/request-quote/" class="btn btn-green">Request a Quote</a>
+</div>
+
+
+<div id="dcast-systems-current-release" data-release="20260806-1302" hidden></div>
+<main class="systems-showcase-page" id="main-content">
+<section class="sys-hero">
+  <div class="sys-container sys-hero-grid">
+    <div class="sys-hero-copy">
+      <p class="sys-kicker">DCAST Systems</p>
+      <h1 class="sys-hero-title">Advanced<br>Electronic<br><span class="green">Security</span> Solutions</h1>
+      <p class="sys-copy">Integrated, intelligent and reliable systems designed to protect what matters most. From installation to monitoring and support, we deliver complete security solutions with cutting-edge technology.</p>
+      <div class="sys-hero-actions">
+        <a class="sys-btn sys-btn-primary" href="/request-quote/">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="sys-btn sys-btn-outline" href="/contact/">Speak to Our Team</a>
+      </div>
+      <div class="sys-feature-strip">
+        <div class="sys-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><strong>24/7</strong><span>Protection</span></div></div>
+        <div class="sys-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg><div><strong>Smart</strong><span>Technology</span></div></div>
+        <div class="sys-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg><div><strong>Integrated</strong><span>Solutions</span></div></div>
+        <div class="sys-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-9 8-14a8 8 0 1 0-16 0c0 5 8 14 8 14z"/><circle cx="12" cy="8" r="2.5"/></svg><div><strong>Nationwide</strong><span>Coverage</span></div></div>
+      </div>
+    </div>
+    <div class="sys-hero-visual" aria-label="DCAST electronic security solutions">
+      <div class="sys-hero-property"><img src="/assets/images/systems-hd-20260824/hero-monitor-hd.webp" alt="CCTV monitoring wall"></div>
+      <div class="sys-hero-stack">
+        <div><img src="/assets/images/systems-hd-20260824/hero-dome-hd.webp" alt="Professional dome CCTV cameras"></div>
+        <div><img src="/assets/images/systems-hd-20260824/hero-control-hd.webp" alt="Security control room operator"></div>
+        <div><img src="/assets/images/systems-hd-20260824/hero-fence-hd.webp" alt="Electric security fencing protecting a modern property"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sys-section" id="systems"><div class="sys-container">
+<div class="sys-section-head"><p class="sys-kicker">Our Systems</p><h2 class="sys-heading">Complete Systems. Total Protection.</h2><p class="sys-copy">Explore our eight core electronic security and fibre installation services. Choose a service to go straight to its details.</p></div>
+<nav class="sys-service-shortcuts" aria-label="Find a Systems service"><a href="/security-systems/#cctv-installation">CCTV Installation</a><a href="/security-systems/#access-control">Access Control</a><a href="/security-systems/#alarm-systems">Alarm Systems</a><a href="/security-systems/#electric-fence">Electric Fence</a><a href="/security-systems/#fibre-installation">Full Turnkey Fibre Installation</a><a href="/security-systems/#boomgates">Boomgates</a><a href="/security-systems/#mantrap-doors">Mantrap Doors</a><a href="/security-systems/#fire-suppression">Fire Suppression</a></nav>
+<div class="sys-service-detail-grid"><article class="sys-card sys-service-detail" id="cctv-installation" aria-labelledby="cctv-installation-title">
+<div class="sys-card-media"><img src="/assets/images/systems-real-20260831/cctv-installation.jpeg" alt="DCAST technician installing outdoor CCTV cameras" loading="lazy" decoding="async" width="1152" height="1536" style="object-position:50% 50%"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 10l4.5-2.5v9L15 14M4 6h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg></span></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 01</span><h3 id="cctv-installation-title" tabindex="-1">CCTV Installation</h3><p>Camera installation and recording solutions designed around your property's entrances, activity areas and security priorities.</p><ul class="sys-service-features"><li>Camera positioning and system setup</li><li>Remote viewing and recording</li><li>Playback, maintenance and support</li></ul><a class="sys-service-enquire" href="/request-quote/?service=CCTV%20Installation">Enquire about CCTV Installation <span aria-hidden="true">→</span></a></div>
+</article>
+<article class="sys-card sys-service-detail" id="access-control" aria-labelledby="access-control-title">
+<div class="sys-card-media"><img src="/assets/images/systems-hd-20260824/system-access-hd.webp" alt="Access Control" loading="lazy"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15v2M6 21h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2zm10-10V7a4 4 0 0 0-8 0v2"/></svg></span></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 02</span><h3 id="access-control-title" tabindex="-1">Access Control</h3><p>Control entry to buildings and restricted spaces with access solutions suited to your staff, visitors and operating hours.</p><ul class="sys-service-features"><li>Card, keypad and biometric access</li><li>Door-entry and visitor access integration</li><li>User permissions and access records</li></ul><a class="sys-service-enquire" href="/request-quote/?service=Access%20Control">Enquire about Access Control <span aria-hidden="true">→</span></a></div>
+</article>
+<article class="sys-card sys-service-detail" id="alarm-systems" aria-labelledby="alarm-systems-title">
+<div class="sys-card-media"><img src="/assets/images/systems-hd-20260824/system-alarm-hd.webp" alt="Alarm Systems" loading="lazy"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 03</span><h3 id="alarm-systems-title" tabindex="-1">Alarm Systems</h3><p>Intruder alarm installations that help detect unauthorised entry and alert the people responsible for your property.</p><ul class="sys-service-features"><li>Site assessment and detection zones</li><li>Sensors, sirens and control panels</li><li>System testing and user handover</li></ul><a class="sys-service-enquire" href="/request-quote/?service=Alarm%20Systems">Enquire about Alarm Systems <span aria-hidden="true">→</span></a></div>
+</article>
+<article class="sys-card sys-service-detail" id="electric-fence" aria-labelledby="electric-fence-title">
+<div class="sys-card-media"><img src="/assets/images/systems-hd-20260824/system-fence-hd.webp" alt="Electric Fencing" loading="lazy"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 04</span><h3 id="electric-fence-title" tabindex="-1">Electric Fence</h3><p>Perimeter security installations for homes, commercial premises and operational sites, designed around the boundary and its risks.</p><ul class="sys-service-features"><li>Perimeter assessment and installation</li><li>Fence energisers and alarm integration</li><li>Inspection, maintenance and repairs</li></ul><a class="sys-service-enquire" href="/request-quote/?service=Electric%20Fence">Enquire about Electric Fence <span aria-hidden="true">→</span></a></div>
+</article>
+<article class="sys-card sys-service-detail" id="fibre-installation" aria-labelledby="fibre-installation-title">
+<div class="sys-service-label" aria-hidden="true"><span class="sys-service-symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6m6 0h6M12 3v6m0 6v6"/><circle cx="12" cy="12" r="3"/><circle cx="3" cy="12" r="1"/><circle cx="21" cy="12" r="1"/><circle cx="12" cy="3" r="1"/><circle cx="12" cy="21" r="1"/></svg></span><span class="sys-service-category">FIBRE & CONNECTIVITY</span><span class="sys-service-caption">From route planning to handover</span></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 05</span><h3 id="fibre-installation-title" tabindex="-1">Full Turnkey Fibre Installation</h3><p>End-to-end fibre infrastructure for reliable connectivity across buildings, business premises and multi-point sites.</p><ul class="sys-service-features"><li>Route planning and cable installation</li><li>Fibre splicing, termination and testing</li><li>Commissioning, documentation and handover</li></ul><a class="sys-service-enquire" href="/request-quote/?service=Full%20Turnkey%20Fibre%20Installation">Enquire about Full Turnkey Fibre Installation <span aria-hidden="true">→</span></a></div>
+</article>
+<article class="sys-card sys-service-detail" id="boomgates" aria-labelledby="boomgates-title">
+<div class="sys-service-label" aria-hidden="true"><span class="sys-service-symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9h4v12M2 21h8M8 10h14v4H8M11 10l3 4m2-4 3 4M5 5h2"/></svg></span><span class="sys-service-category">VEHICLE ACCESS</span><span class="sys-service-caption">Controlled entry. Smoother movement.</span></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 06</span><h3 id="boomgates-title" tabindex="-1">Boomgates</h3><p>Vehicle barrier solutions for controlled entry and exit at estates, office parks, car parks and industrial facilities.</p><ul class="sys-service-features"><li>Boomgate supply and installation</li><li>Vehicle access-control integration</li><li>Operational testing and maintenance</li></ul><a class="sys-service-enquire" href="/request-quote/?service=Boomgates">Enquire about Boomgates <span aria-hidden="true">→</span></a></div>
+</article>
+<article class="sys-card sys-service-detail" id="mantrap-doors" aria-labelledby="mantrap-doors-title">
+<div class="sys-card-media"><img src="/assets/images/systems-real-20260831/mantrap-doors.jpeg" alt="Glass mantrap security doors with controlled entry and exit" loading="lazy" decoding="async" width="1152" height="1536" style="object-position:50% 61%"></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 07</span><h3 id="mantrap-doors-title" tabindex="-1">Mantrap Doors</h3><p>Interlocking door solutions that manage controlled passage into restricted areas and strengthen entry verification.</p><ul class="sys-service-features"><li>Entry-point assessment and design</li><li>Door interlocking and access integration</li><li>Emergency-release planning and handover</li></ul><a class="sys-service-enquire" href="/request-quote/?service=Mantrap%20Doors">Enquire about Mantrap Doors <span aria-hidden="true">→</span></a></div>
+</article>
+<article class="sys-card sys-service-detail" id="fire-suppression" aria-labelledby="fire-suppression-title">
+<div class="sys-service-label" aria-hidden="true"><span class="sys-service-symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s6 6 6 12a6 6 0 1 1-12 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 2-11z"/></svg></span><span class="sys-service-category">FIRE SUPPRESSION</span><span class="sys-service-caption">Risk-led protection and servicing</span></div><div class="sys-card-body"><span class="sys-service-index">DCAST SYSTEMS / 08</span><h3 id="fire-suppression-title" tabindex="-1">Fire Suppression</h3><p>Fire suppression solutions selected for the risks and spaces being protected, with installation and ongoing servicing support.</p><ul class="sys-service-features"><li>Site assessment and system selection</li><li>Suppression-system installation and commissioning</li><li>Inspection, servicing and maintenance</li></ul><a class="sys-service-enquire" href="/request-quote/?service=Fire%20Suppression">Enquire about Fire Suppression <span aria-hidden="true">→</span></a></div>
+</article></div>
+<div class="sys-supporting-services"><h2>Additional Systems &amp; Support</h2><div class="sys-support-grid"><article class="sys-card"><div class="sys-card-media"><img src="/assets/images/systems-real-20260831/gate-automation.jpeg" alt="DCAST technician servicing a sliding gate motor" loading="lazy" decoding="async" width="1152" height="1536" style="object-position:50% 83%"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V7l9-4 9 4v14M3 21h18M9 21V9h6v12"/></svg></span></div><div class="sys-card-body"><h3>Gate Automation</h3><p>Reliable automated gate systems for convenience, safety and peace of mind.</p></div></article>
+<article class="sys-card"><div class="sys-card-media"><img src="/assets/images/systems-hd-20260824/system-intercom-hd.webp" alt="Intercom Systems" loading="lazy"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v10H8l-5 4V5z"/></svg></span></div><div class="sys-card-body"><h3>Intercom Systems</h3><p>Clear communication and visitor management for homes and businesses.</p></div></article>
+<article class="sys-card"><div class="sys-card-media"><img src="/assets/images/systems-real-20260831/dvr-nvr-installation.jpeg" alt="DCAST technician working on a CCTV recorder and equipment rack" loading="lazy" decoding="async" width="1152" height="1536" style="object-position:50% 59%"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h18v12H3zM8 20h8"/></svg></span></div><div class="sys-card-body"><h3>DVR / NVR Systems</h3><p>Reliable recording, storage and playback for total incident visibility.</p></div></article>
+<article class="sys-card"><div class="sys-card-media"><img src="/assets/images/systems-real-20260831/camera-maintenance.jpeg" alt="DCAST technician maintaining an indoor security camera" loading="lazy" decoding="async" width="1152" height="1536" style="object-position:50% 44%"><span class="sys-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4.5A2.5 2.5 0 0 1 14.5 8l6 6-2 2-6-6A2.5 2.5 0 0 1 9 6.5l1.7 1.7L12 6.9l-1.7-1.7z"/></svg></span></div><div class="sys-card-body"><h3>Maintenance & Support</h3><p>Ongoing maintenance and expert support to keep your systems running perfectly.</p></div></article></div></div>
+</div></section>
+<section class="sys-projects" id="field-projects">
+  <div class="sys-container">
+    <div class="sys-section-head">
+      <p class="sys-kicker">Real DCAST Work</p>
+      <h2 class="sys-heading">Our Field Projects</h2>
+      <p class="sys-copy">Professional installation, monitoring and perimeter-security work delivered by our technical teams.</p>
+    </div>
+    <div class="sys-projects-grid">
+      <article class="sys-project-card"><div class="sys-project-media"><img src="/assets/images/systems-hd-20260824/project-branding-hd.webp" alt="Security branding and signage project" loading="lazy"><h3>Branding &amp; Signage</h3></div></article>
+      <article class="sys-project-card"><div class="sys-project-media"><img src="/assets/images/systems-hd-20260824/project-monitor-hd.webp" alt="CCTV monitoring setup project" loading="lazy"><h3>CCTV Monitoring Setup</h3></div></article>
+      <article class="sys-project-card"><div class="sys-project-media"><img src="/assets/images/systems-hd-20260824/project-camera-hd.webp" alt="CCTV camera installation project" loading="lazy"><h3>Camera Installation</h3></div></article>
+      <article class="sys-project-card"><div class="sys-project-media"><img src="/assets/images/systems-hd-20260824/project-control-hd.webp" alt="Security control room operations" loading="lazy"><h3>Control Room Operations</h3></div></article>
+      <article class="sys-project-card"><div class="sys-project-media"><img src="/assets/images/systems-hd-20260824/project-fence-hd.webp" alt="Electric fencing installation project" loading="lazy"><h3>Electric Fencing Installation</h3></div></article>
+      <article class="sys-project-card"><div class="sys-project-media"><img src="/assets/images/systems-hd-20260824/project-signage-hd.webp" alt="Security signage project" loading="lazy"><h3>Security Signage</h3></div></article>
+    </div>
+  </div>
+</section>
+<section class="sys-trust" id="why-us"><div class="sys-container"><div class="sys-trust-panel"><div class="sys-trust-head"><p class="sys-kicker">Why Choose DCAST Systems</p><h2>Security You Can Trust</h2></div><div class="sys-trust-grid"><div class="sys-trust-item"><div class="sys-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l4-4h9a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14z"/></svg></div><h3>Custom System Design</h3><p>Tailored solutions engineered to fit your property, risks and budget.</p></div><div class="sys-trust-item"><div class="sys-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3>Skilled Technicians</h3><p>Experienced professionals with practical installation expertise.</p></div><div class="sys-trust-item"><div class="sys-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4"/></svg></div><h3>Reliable & Proven</h3><p>Premium equipment and proven systems you can count on.</p></div><div class="sys-trust-item"><div class="sys-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 3"/></svg></div><h3>Fast Response Support</h3><p>Responsive support when you need us most.</p></div><div class="sys-trust-item"><div class="sys-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8M21 7v6"/></svg></div><h3>Scalable Solutions</h3><p>Systems that grow with your needs today and tomorrow.</p></div></div></div></div></section>
+<section class="sys-industries" id="industries-we-serve" style="scroll-margin-top:110px"><div class="sys-container"><div class="sys-section-head"><p class="sys-kicker">Securing Every Sector</p><h2 class="sys-heading">Industries We Serve</h2></div><div class="sys-industries-grid"><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/residential-estates.webp" alt="Residents walking between homes in a landscaped residential estate" loading="lazy" decoding="async" width="720" height="720"></div><p>Residential Estates</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/schools-universities.webp" alt="Teacher helping uniformed students in a classroom" loading="lazy" decoding="async" width="720" height="720"></div><p>Schools & Universities</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/hospitals-clinics.webp" alt="Nurse speaking with a patient in a healthcare clinic" loading="lazy" decoding="async" width="720" height="720"></div><p>Hospitals & Clinics</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/retail-stores.webp" alt="Shop assistant helping a customer at a supermarket checkout" loading="lazy" decoding="async" width="720" height="720"></div><p>Retail Stores</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/corporate-offices.webp" alt="Business colleagues collaborating in a modern office" loading="lazy" decoding="async" width="720" height="720"></div><p>Corporate Offices</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/warehouses-logistics.webp" alt="Warehouse staff inspecting cartons beside stocked pallet shelves" loading="lazy" decoding="async" width="720" height="720"></div><p>Warehouses & Logistics</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/construction-sites.webp" alt="Construction professionals reviewing plans on a building site" loading="lazy" decoding="async" width="720" height="720"></div><p>Construction Sites</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/hotels-hospitality.webp" alt="Hotel receptionist welcoming a guest with luggage" loading="lazy" decoding="async" width="720" height="720"></div><p>Hotels & Hospitality</p></div><div class="sys-industry"><div class="sys-industry-media"><img src="/assets/images/industries-people-20260831/industrial-sites.webp" alt="Factory technicians inspecting manufacturing equipment" loading="lazy" decoding="async" width="720" height="720"></div><p>Industrial Sites</p></div></div></div></section>
+
+<!-- DCAST_CLIENT_BRANDS_20260831 -->
+<section class="dcast-client-brands" id="trusted-clients" data-client-brands aria-labelledby="dcast-client-brands-title">
+  <div class="dcast-client-brands__heading">
+    <span class="dcast-client-brands__eyebrow">Trusted By</span>
+    <h2 class="dcast-client-brands__title" id="dcast-client-brands-title">Organisations We Protect</h2>
+  </div>
+  <div class="dcast-client-brands__viewport" id="dcast-client-brands-viewport" tabindex="0" role="group" aria-label="Client logos. Focus here to pause the scrolling.">
+    <div class="dcast-client-brands__track">
+      <ul class="dcast-client-brands__group" role="list">
+        <li class="dcast-client-brands__item dcast-client-brands__item--fbc-bank"><img src="/assets/images/client-brands-20260831/fbc-bank.webp" alt="FBC Bank Limited" width="720" height="240" decoding="async"></li>
+        <li class="dcast-client-brands__item dcast-client-brands__item--old-mutual"><img src="/assets/images/client-brands-20260831/old-mutual.webp" alt="Old Mutual" width="720" height="240" decoding="async"></li>
+        <li class="dcast-client-brands__item dcast-client-brands__item--cbre"><img src="/assets/images/client-brands-20260831/cbre.webp" alt="CBRE — CB Richard Ellis" width="720" height="240" decoding="async"></li>
+        <li class="dcast-client-brands__item dcast-client-brands__item--pick-n-pay"><img src="/assets/images/client-brands-20260831/pick-n-pay.webp" alt="Pick n Pay" width="720" height="240" decoding="async"></li>
+        <li class="dcast-client-brands__item dcast-client-brands__item--standard-chartered"><img src="/assets/images/client-brands-20260831/standard-chartered.webp" alt="Standard Chartered" width="720" height="240" decoding="async"></li>
+        <li class="dcast-client-brands__item dcast-client-brands__item--liquid"><img src="/assets/images/client-brands-20260831/liquid.webp" alt="Liquid Intelligent Technologies" width="720" height="240" decoding="async"></li>
+        <li class="dcast-client-brands__item dcast-client-brands__item--mashonaland-holdings"><img src="/assets/images/client-brands-20260831/mashonaland-holdings.webp" alt="Mashonaland Holdings Limited" width="720" height="240" decoding="async"></li>
+        <li class="dcast-client-brands__item dcast-client-brands__item--zb"><img src="/assets/images/client-brands-20260831/zb.webp" alt="ZB" width="548" height="300" decoding="async"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="dcast-client-brands__controls">
+    <button class="dcast-client-brands__toggle" type="button" aria-controls="dcast-client-brands-viewport" hidden><span data-motion-icon aria-hidden="true">Ⅱ</span><span data-motion-label>Pause logos</span></button>
+  </div>
+</section>
+
+<section class="sys-cta"><div class="sys-cta-bg"><img src="/assets/images/systems-20260805-152431/cta.webp" alt=""></div><div class="sys-container sys-cta-inner"><div><h2>Ready to Upgrade Your Security?</h2><p>Let’s design a smarter, safer solution for your property.</p></div><div class="sys-cta-actions"><a class="sys-btn sys-btn-primary" href="/request-quote/">Request a Quote</a><a class="sys-btn sys-btn-outline" href="/contact/">Speak to Our Experts</a></div></div></section>
+</main>
+
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="/assets/images/dcast-logo-mark-refined-20260830.png?v=20260830-190000" alt="DCAST logo" width="42" height="42"><span class="brand-name"><span class="n1">DCAST <b>SYSTEMS</b></span><span class="n2">Inspired Security Systems</span></span></div>
+        <p>The manned-guarding division of DCAST Systems — protecting Zimbabwean businesses, sites and homes since 2009.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="/about/">About Us</a></li><li><a href="/guarding-services/">Services</a></li><li><a href="/security-systems/" class="active">Systems</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="/guarding-services/">Corporate Security</a></li><li><a href="/guarding-services/">Mining & Industrial</a></li><li><a href="/guarding-services/">Retail Security</a></li><li><a href="/guarding-services/">Residential Guarding</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>3 Wembley Crescent, Eastlea, Harare</li>
+          <li><a href="tel:+263242782753">+263 242 782 753/58</a></li>
+          <li><a href="mailto:info@dcastsystems.co.zw">info@dcastsystems.co.zw</a></li>
+          <li><a href="https://dcastsystems.co.zw">dcastsystems.co.zw</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 <b>DCAST Security</b> — A Division of DCAST Systems. All rights reserved. <!-- DCAST_VISIONCO_CREDIT_LINK_20260804 --><span class="visionco-footer-credit">Made by <a href="https://visionpixels.autos" target="_blank" rel="noopener noreferrer" aria-label="Visit VisionCo website">VisionCo</a></span></span>
+      <span>Inspired Security Systems</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Floating nav shadow on scroll
+const navwrap=document.getElementById('navwrap');
+window.addEventListener('scroll',()=>navwrap.classList.toggle('scrolled',scrollY>40));
+// Mobile menu
+const burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
+burger.addEventListener('click',()=>{burger.classList.toggle('open');mmenu.classList.toggle('open')});
+mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mmenu.classList.remove('open');burger.classList.remove('open')}));
+// Systems service navigation manages route and section highlighting.
+// Reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// Counter animation
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;const el=e.target,end=+el.dataset.count;let t0=null;
+  const step=t=>{if(!t0)t0=t;const p=Math.min((t-t0)/1600,1);el.textContent=Math.floor(p*end)+(p===1?'+':'');if(p<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step);cio.unobserve(el);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+</script>
+
+<script id="dcastOfficialProfilesScript">
+(function () {
+  "use strict";
+
+  const widget = document.getElementById("dcastProfileWidget");
+  const toggle = document.getElementById("dcastProfileToggle");
+
+  if (!widget || !toggle) {
+    return;
+  }
+
+  function setOpen(isOpen) {
+    widget.classList.toggle("open", isOpen);
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  }
+
+  toggle.addEventListener("click", function () {
+    setOpen(!widget.classList.contains("open"));
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!widget.contains(event.target)) {
+      setOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
+</script>
+
+
+<script id="dcastCurrentTemplateNavigation">
+/* DCAST_CURRENT_TEMPLATE_NAVIGATION_20260804 */
+(function () {
+  "use strict";
+
+  const routes = new Set([
+    "/",
+    "/about/",
+    "/guarding-services/",
+    "/security-systems/",
+    "/why-us/",
+    "/contact/",
+    "/request-quote/"
+  ]);
+
+  window.addEventListener(
+    "click",
+    function (event) {
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        event.altKey
+      ) {
+        return;
+      }
+
+      const anchor = event.target.closest
+        ? event.target.closest("a[href]")
+        : null;
+
+      if (!anchor || anchor.target === "_blank") {
+        return;
+      }
+
+      const destination = new URL(
+        anchor.href,
+        window.location.href
+      );
+
+      if (
+        destination.origin !== window.location.origin ||
+        !routes.has(destination.pathname)
+      ) {
+        return;
+      }
+
+      // Same-page Systems anchors are handled by the shared service navigation.
+      if (destination.pathname === "/security-systems/" &&
+          window.location.pathname === destination.pathname && destination.hash) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      window.location.assign(
+        destination.pathname
+        + destination.search
+        + destination.hash
+      );
+    },
+    true
+  );
+})();
+</script>
+
+<script>
+window.addEventListener('pageshow', function (event) {
+  if (event.persisted) window.location.reload();
+});
+</script>
+<script id="dcastGlobalHeroScrollFX" src="/assets/js/dcast-global-hero-scrollfx-20260826.js?v=20260826-144800" defer></script>
+</body>
+</html>

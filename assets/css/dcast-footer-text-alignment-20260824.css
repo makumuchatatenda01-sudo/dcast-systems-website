@@ -1,0 +1,14 @@
+/* DCAST_FOOTER_TEXT_ALIGNMENT_20260824 */
+.foot-grid > div {
+  align-self: start !important;
+}
+
+.foot-logo {
+  align-items: flex-start !important;
+}
+
+.foot-logo .brand-name {
+  align-self: flex-start !important;
+  margin-top: 0 !important;
+  transform: none !important;
+}

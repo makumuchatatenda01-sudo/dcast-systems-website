@@ -1,0 +1,92 @@
+/* DCAST_MAIN_HOMEPAGE_HERO_FINAL_20260804 */
+
+.hero {
+  position: relative !important;
+  overflow: hidden !important;
+  background: #061227 !important;
+}
+
+.hero .hero-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  background-image:
+    url("/assets/images/dcast-main-homepage-hero-20260804-135813.webp") !important;
+
+  background-position:
+    center center !important;
+
+  background-repeat:
+    no-repeat !important;
+
+  background-size:
+    cover !important;
+
+  filter:
+    brightness(.88)
+    contrast(1.05)
+    saturate(1.04) !important;
+
+  transform:
+    scale(1.01) !important;
+}
+
+.hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 9, 29, .88) 0%,
+      rgba(7, 13, 38, .69) 32%,
+      rgba(5, 23, 47, .34) 65%,
+      rgba(3, 18, 36, .12) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(3, 8, 24, .06) 0%,
+      rgba(3, 8, 24, .03) 55%,
+      rgba(3, 8, 24, .50) 100%
+    ) !important;
+}
+
+.hero > .container,
+.hero .hero-title,
+.hero .hero-actions,
+.hero .hero-msg,
+.hero .hero-strip {
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+@media (max-width: 899px) {
+  .hero .hero-bg {
+    background-position:
+      61% center !important;
+
+    filter:
+      brightness(.78)
+      contrast(1.06)
+      saturate(1.02) !important;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(4, 8, 27, .26) 0%,
+        rgba(5, 10, 31, .43) 42%,
+        rgba(3, 7, 22, .86) 100%
+      ) !important;
+  }
+}

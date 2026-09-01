@@ -1,0 +1,321 @@
+/* DCAST HOMEPAGE — VIDEO TEMPLATE ADAPTATION — 20260827 */
+
+/* Dark, integrated floating navigation inspired by the supplied template. */
+body .navwrap{
+  top:14px;
+  padding:0 18px;
+}
+body .navwrap .island{
+  max-width:1180px;
+  min-height:68px;
+  padding:.42rem .55rem .42rem 1rem;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:18px;
+  background:rgba(7,14,27,.84);
+  box-shadow:0 16px 45px rgba(2,8,18,.28);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+body .navwrap .brand-name .n1{color:#4ee6a8;}
+body .navwrap .brand-name .n1 b{color:#fff;}
+body .navwrap .brand-name .n2{color:rgba(255,255,255,.62);}
+body .navwrap nav a{color:rgba(255,255,255,.82);}
+body .navwrap nav a:hover,
+body .navwrap nav a.active{
+  color:#fff;
+  background:rgba(78,230,168,.15);
+}
+body .navwrap .burger span{background:#fff;}
+
+/* Cinematic, centred hero with the supplied template's rounded lower edge. */
+body .dcast-home-template-hero{
+  isolation:isolate;
+  min-height:clamp(700px,92svh,980px)!important;
+  width:calc(100% - 20px);
+  margin:0 10px;
+  padding:132px 0 116px!important;
+  align-items:center!important;
+  border-radius:0 0 40px 40px;
+  overflow:hidden;
+  background:#071224;
+}
+body .dcast-home-template-hero .hero-bg{
+  background-image:url('/assets/images/dcast-home-new-guard-20260827.webp')!important;
+  background-position:center center!important;
+  background-size:cover!important;
+  filter:none!important;
+  z-index:0;
+}
+body .dcast-home-template-hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:1!important;
+  background:
+    radial-gradient(circle at 50% 42%,rgba(13,154,92,.10),transparent 38%),
+    linear-gradient(90deg,rgba(4,10,22,.74),rgba(10,20,38,.59) 48%,rgba(4,10,22,.68))!important;
+  pointer-events:none;
+}
+body .dcast-home-template-hero::after{
+  content:'';
+  position:absolute;
+  inset:-1px;
+  z-index:2;
+  background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.018));
+  clip-path:polygon(0 0,18% 0,50% 76%,82% 0,100% 0,53% 100%,47% 100%);
+  opacity:.58;
+  pointer-events:none;
+}
+body .dcast-home-template-hero>.container{
+  position:relative;
+  z-index:3!important;
+  width:min(920px,calc(100% - 48px))!important;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+body .dcast-home-template-hero .hero-kicker{
+  margin:0 0 18px;
+  color:#55e2ab;
+  font-family:'Jost',sans-serif;
+  font-size:clamp(.74rem,.94vw,.9rem);
+  font-weight:700;
+  line-height:1.35;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+body .dcast-home-template-hero .home-hero-main{
+  max-width:900px;
+  margin:0;
+  color:#fff;
+  font-family:'Jost',sans-serif;
+  font-size:clamp(3.2rem,6.15vw,6.35rem);
+  font-weight:800;
+  line-height:.96;
+  letter-spacing:-.045em;
+  text-align:center;
+  text-transform:uppercase;
+  text-wrap:balance;
+  text-shadow:0 8px 34px rgba(0,0,0,.52);
+}
+body .dcast-home-template-hero .home-hero-main em{
+  color:#4ee6a8;
+  font-style:normal;
+}
+body .dcast-home-template-hero .home-hero-copy{
+  max-width:660px;
+  margin:24px auto 30px;
+  color:rgba(255,255,255,.82);
+  font-family:'Jost',sans-serif;
+  font-size:clamp(.98rem,1.15vw,1.1rem);
+  font-weight:400;
+  line-height:1.65;
+  text-align:center;
+  text-shadow:0 3px 18px rgba(0,0,0,.45);
+}
+body .dcast-home-template-hero .hero-actions{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  width:100%;
+}
+body .dcast-home-template-hero .hero-actions .btn{
+  min-height:54px;
+  padding:0 27px;
+  border-radius:999px;
+  font-size:.92rem;
+  letter-spacing:.02em;
+}
+body .dcast-home-template-hero .hero-actions .btn-green{
+  background:#0cad70;
+  border-color:#0cad70;
+  box-shadow:0 14px 34px rgba(12,173,112,.30);
+}
+body .dcast-home-template-hero .hero-actions .btn-outline{
+  background:rgba(6,14,28,.34);
+  border-color:rgba(255,255,255,.74);
+  backdrop-filter:blur(5px);
+}
+body .dcast-home-template-hero .hero-actions .btn:hover{
+  transform:translateY(-3px);
+}
+
+/* Circular seal overlapping the hero, matching the template's centre badge. */
+.dcast-template-seal{
+  position:relative;
+  z-index:8;
+  width:98px;
+  height:98px;
+  margin:-49px auto -47px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border:8px solid #fff;
+  border-radius:50%;
+  background:#fff;
+  color:#10223f;
+  box-shadow:0 15px 35px rgba(10,25,50,.22);
+}
+.dcast-template-seal::before{
+  content:'';
+  position:absolute;
+  inset:2px;
+  border:1px dashed rgba(16,34,63,.34);
+  border-radius:50%;
+}
+.dcast-template-seal svg{
+  position:relative;
+  z-index:1;
+  width:28px;
+  height:28px;
+  color:#0cad70;
+}
+.dcast-template-seal strong{
+  position:relative;
+  z-index:1;
+  margin-top:1px;
+  font-family:'Jost',sans-serif;
+  font-size:.66rem;
+  line-height:1;
+  letter-spacing:.13em;
+}
+.dcast-template-seal small{
+  position:relative;
+  z-index:1;
+  margin-top:3px;
+  color:#607086;
+  font-size:.48rem;
+  line-height:1;
+  letter-spacing:.2em;
+}
+
+/* Four-item credibility strip below the hero. */
+.dcast-template-stats{
+  position:relative;
+  z-index:4;
+  padding:82px 24px 38px;
+  background:#fff;
+}
+.dcast-template-stats-grid{
+  width:min(1080px,100%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  align-items:center;
+}
+.dcast-template-stat{
+  min-height:72px;
+  padding:0 28px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border-right:1px solid #e5eaf0;
+  text-align:center;
+}
+.dcast-template-stat:last-child{border-right:0;}
+.dcast-template-stat strong{
+  color:#112541;
+  font-family:'Jost',sans-serif;
+  font-size:clamp(1.75rem,2.4vw,2.35rem);
+  font-weight:800;
+  line-height:1;
+  letter-spacing:-.04em;
+}
+.dcast-template-stat strong em{
+  color:#0cad70;
+  font-style:normal;
+}
+.dcast-template-stat span{
+  margin-top:8px;
+  color:#6b7687;
+  font-size:.72rem;
+  font-weight:600;
+  line-height:1.35;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.dcast-template-stat:nth-child(2){transition-delay:.08s;}
+.dcast-template-stat:nth-child(3){transition-delay:.16s;}
+.dcast-template-stat:nth-child(4){transition-delay:.24s;}
+
+@media (max-width:899px){
+  body .navwrap{padding:0 12px;}
+  body .navwrap .island{
+    min-height:64px;
+    border-radius:17px;
+  }
+  body .dcast-home-template-hero{
+    min-height:100svh!important;
+    width:100%;
+    margin:0;
+    padding:116px 0 82px!important;
+    align-items:flex-end!important;
+    border-radius:0 0 28px 28px;
+  }
+  body .dcast-home-template-hero .hero-bg{
+    background-position:68% center!important;
+  }
+  body .dcast-home-template-hero::before{
+    background:linear-gradient(180deg,rgba(4,10,22,.28),rgba(4,10,22,.44) 38%,rgba(4,10,22,.88) 78%,rgba(4,10,22,.97))!important;
+  }
+  body .dcast-home-template-hero::after{
+    opacity:.32;
+    clip-path:polygon(0 0,12% 0,50% 72%,88% 0,100% 0,54% 100%,46% 100%);
+  }
+  body .dcast-home-template-hero>.container{
+    width:min(92%,620px)!important;
+  }
+  body .dcast-home-template-hero .hero-kicker{
+    margin-bottom:13px;
+    font-size:.67rem;
+    letter-spacing:.14em;
+  }
+  body .dcast-home-template-hero .home-hero-main{
+    font-size:clamp(2.7rem,12.5vw,4.9rem);
+    line-height:.96;
+  }
+  body .dcast-home-template-hero .home-hero-copy{
+    margin:17px auto 22px;
+    font-size:.94rem;
+    line-height:1.52;
+  }
+  .dcast-template-seal{
+    width:86px;
+    height:86px;
+    margin:-43px auto -40px;
+  }
+  .dcast-template-stats{
+    padding:70px 18px 28px;
+  }
+  .dcast-template-stats-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:0;
+  }
+  .dcast-template-stat{
+    min-height:94px;
+    padding:16px 12px;
+  }
+  .dcast-template-stat:nth-child(odd){border-right:1px solid #e5eaf0;}
+  .dcast-template-stat:nth-child(even){border-right:0;}
+  .dcast-template-stat:nth-child(-n+2){border-bottom:1px solid #e5eaf0;}
+}
+@media (max-width:520px){
+  body .dcast-home-template-hero .hero-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  body .dcast-home-template-hero .hero-actions .btn{
+    width:100%;
+  }
+  .dcast-template-stat strong{font-size:1.65rem;}
+  .dcast-template-stat span{font-size:.63rem;}
+}
+@media (prefers-reduced-motion:reduce){
+  .dcast-template-stat{transition-delay:0s!important;}
+}

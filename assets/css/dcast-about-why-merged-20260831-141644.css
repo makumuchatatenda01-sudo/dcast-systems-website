@@ -1,0 +1,114 @@
+/* DCAST ABOUT — WHY DCAST PHOTO CARDS
+   Six professional image-backed reasons, scoped to the About page only. */
+.dcast-about-why{
+  padding:clamp(72px,8vw,112px) 0;
+  background:#f7f9fb;
+  border-top:1px solid #e7ebf0;
+  border-bottom:1px solid #e7ebf0;
+}
+.dcast-about-why .sec-head{margin:0 auto 42px;max-width:760px;text-align:center}
+.dcast-about-why .kicker{
+  display:inline-block;
+  margin-bottom:10px;
+  color:#0d9a5c;
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.dcast-about-why h2{
+  margin:0;
+  color:#1d2159;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,4vw,3.25rem);
+  line-height:1.08;
+}
+.dcast-about-why .why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+.dcast-about-why .why{
+  position:relative;
+  isolation:isolate;
+  min-height:370px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+  padding:30px 26px;
+  background:#08172f;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:18px;
+  box-shadow:0 12px 32px rgba(10,31,64,.14);
+  color:#fff;
+  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.dcast-about-why .why::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background-image:var(--why-photo);
+  background-size:cover;
+  background-position:var(--why-position,center);
+  background-repeat:no-repeat;
+  transform:scale(1.01);
+  transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s ease;
+}
+.dcast-about-why .why::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:
+    linear-gradient(180deg,rgba(4,18,39,.05) 0%,rgba(4,18,39,.28) 42%,rgba(4,18,39,.94) 100%),
+    linear-gradient(90deg,rgba(13,154,92,.12),transparent 45%);
+}
+.dcast-about-why .why:hover{
+  transform:translateY(-5px);
+  border-color:rgba(92,224,165,.72);
+  box-shadow:0 22px 48px rgba(10,31,64,.22);
+}
+.dcast-about-why .why:hover::before{
+  transform:scale(1.07);
+  filter:saturate(1.05) contrast(1.02);
+}
+.dcast-about-why .why-copy{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:34rem;
+}
+.dcast-about-why .why .ico{display:none!important}
+.dcast-about-why .why h3{
+  margin:0 0 9px;
+  color:#fff;
+  font-family:'Jost',sans-serif;
+  font-size:clamp(1.12rem,1.6vw,1.3rem);
+  font-weight:750;
+  line-height:1.25;
+  text-shadow:0 2px 14px rgba(0,0,0,.38);
+}
+.dcast-about-why .why p{
+  margin:0;
+  color:rgba(255,255,255,.88);
+  font-size:.95rem;
+  line-height:1.6;
+  text-shadow:0 1px 8px rgba(0,0,0,.34);
+}
+@media(max-width:980px){
+  .dcast-about-why .why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dcast-about-why .why{min-height:340px}
+}
+@media(max-width:680px){
+  .dcast-about-why{padding:62px 0}
+  .dcast-about-why .sec-head{margin-bottom:30px}
+  .dcast-about-why .why-grid{grid-template-columns:1fr;gap:16px}
+  .dcast-about-why .why{min-height:330px;padding:26px 22px}
+}
+@media(prefers-reduced-motion:reduce){
+  .dcast-about-why .why,
+  .dcast-about-why .why::before{transition:none}
+  .dcast-about-why .why:hover,
+  .dcast-about-why .why:hover::before{transform:none}
+}

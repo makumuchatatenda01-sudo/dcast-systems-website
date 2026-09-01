@@ -1,0 +1,18 @@
+# Local and private files
+.env
+.env.*
+*.key
+*.pem
+*.log
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Temporary and backup files
+*.bak
+*.tmp
+*~
+
+# Duplicate packaged source
+dcast-systems-full-source.zip

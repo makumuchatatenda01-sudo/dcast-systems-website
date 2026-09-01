@@ -1,0 +1,134 @@
+/* DCAST_REAL_SUBPAGE_HERO_PHOTO_CSS_20260804 */
+
+.dcast-current-subpage
+.dcast-page-banner.dcast-real-photo-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 510px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #101638 !important;
+}
+
+.dcast-current-subpage
+.dcast-real-photo-hero
+.dcast-real-hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  object-fit: cover;
+  object-position: center 43%;
+  filter:
+    brightness(.88)
+    contrast(1.04)
+    saturate(.96);
+  transform: scale(1.002);
+  pointer-events: none;
+}
+
+.dcast-current-subpage
+.dcast-page-banner.dcast-real-photo-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1 !important;
+  opacity: 1 !important;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 12, 42, .66) 0%,
+      rgba(11, 18, 52, .44) 47%,
+      rgba(5, 70, 67, .16) 100%
+    ) !important;
+}
+
+.dcast-current-subpage
+.dcast-page-banner.dcast-real-photo-hero
+.container {
+  position: relative;
+  z-index: 2 !important;
+  width: min(1180px, 90%);
+}
+
+.dcast-current-subpage
+.dcast-real-photo-about
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dcast-current-subpage
+.dcast-real-photo-guarding
+.container {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.dcast-current-subpage
+.dcast-page-banner.dcast-real-photo-hero h1 {
+  color: #ffffff !important;
+  text-shadow:
+    0 3px 10px rgba(0, 0, 0, .76),
+    0 14px 40px rgba(0, 0, 0, .48) !important;
+}
+
+.dcast-current-subpage
+.dcast-page-banner.dcast-real-photo-hero p {
+  color: rgba(255, 255, 255, .95) !important;
+  text-shadow:
+    0 2px 9px rgba(0, 0, 0, .74) !important;
+}
+
+.dcast-current-subpage
+.dcast-page-banner.dcast-real-photo-hero span {
+  color: #73efb9 !important;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, .72) !important;
+}
+
+/* Preserve the green line on the customised About banner. */
+.dcast-current-subpage
+.dcast-real-photo-about.about-hero::after {
+  z-index: 3;
+}
+
+@media (max-width: 760px) {
+  .dcast-current-subpage
+  .dcast-page-banner.dcast-real-photo-hero {
+    min-height: 440px;
+  }
+
+  .dcast-current-subpage
+  .dcast-real-photo-hero
+  .dcast-real-hero-photo {
+    object-position: center 42%;
+    filter:
+      brightness(.82)
+      contrast(1.05)
+      saturate(.94);
+  }
+
+  .dcast-current-subpage
+  .dcast-page-banner.dcast-real-photo-hero::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(7, 11, 39, .42) 0%,
+        rgba(8, 14, 43, .50) 54%,
+        rgba(4, 38, 42, .48) 100%
+      ) !important;
+  }
+
+  .dcast-current-subpage
+  .dcast-real-photo-guarding
+  .container {
+    text-align: center;
+  }
+}

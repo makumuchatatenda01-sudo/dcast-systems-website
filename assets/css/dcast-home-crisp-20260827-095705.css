@@ -1,0 +1,45 @@
+/* DCAST HOME CRISP HERO — 20260827-095705 */
+body .dcast-home-approved-hero .hero-bg{
+  background-image:url('/assets/images/dcast-home-ultra-hd-20260827-095705.webp')!important;
+  background-position:center 112px!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  filter:none!important;
+  transform:none!important;
+  image-rendering:auto;
+}
+body .dcast-home-approved-hero .hero-bg::after{
+  height:148px!important;
+  background:linear-gradient(90deg,
+    #9aa4b2 0%,
+    #83acd6 25%,
+    #6ca1d5 50%,
+    #29333f 76%,
+    #46536b 100%)!important;
+}
+body .dcast-home-approved-hero::before{
+  background:linear-gradient(90deg,
+    rgba(4,13,26,.76) 0%,
+    rgba(4,13,26,.64) 27%,
+    rgba(4,13,26,.42) 44%,
+    rgba(4,13,26,.14) 65%,
+    rgba(4,13,26,.015) 82%)!important;
+}
+body .dcast-home-approved-hero .home-hero-main{
+  text-shadow:0 4px 20px rgba(0,0,0,.36)!important;
+}
+body .dcast-home-approved-hero .home-hero-copy{
+  text-shadow:0 2px 10px rgba(0,0,0,.34)!important;
+}
+@media (max-width:899px){
+  body .dcast-home-approved-hero .hero-bg{
+    background-position:66% 88px!important;
+  }
+  body .dcast-home-approved-hero::before{
+    background:linear-gradient(180deg,
+      rgba(4,13,26,.04) 0%,
+      rgba(4,13,26,.11) 32%,
+      rgba(4,13,26,.58) 66%,
+      rgba(4,13,26,.90) 100%)!important;
+  }
+}

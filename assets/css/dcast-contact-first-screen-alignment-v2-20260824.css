@@ -1,0 +1,38 @@
+/* DCAST_CONTACT_FIRST_SCREEN_ALIGNMENT_V2_20260824 */
+main.dcast-premium-contact-page {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+main.dcast-premium-contact-page > section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+main.dcast-premium-contact-page .dcast-premium-contact-grid {
+  min-height: 0 !important;
+  padding: 128px 0 72px !important;
+  align-items: start !important;
+}
+
+main.dcast-premium-contact-page .dcast-contact-left,
+main.dcast-premium-contact-page .dcast-contact-form-wrap {
+  align-self: start !important;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 980px) {
+  main.dcast-premium-contact-page .dcast-premium-contact-grid {
+    padding-top: 112px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  main.dcast-premium-contact-page .dcast-premium-contact-grid {
+    padding-top: 96px !important;
+    padding-bottom: 52px !important;
+  }
+}

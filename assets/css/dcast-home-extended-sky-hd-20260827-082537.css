@@ -1,0 +1,56 @@
+/* DCAST HOME EXTENDED SKY HD — 20260827-082537 */
+body .dcast-home-approved-hero{
+  min-height:clamp(720px,92vh,940px)!important;
+  padding-top:138px!important;
+}
+body .dcast-home-approved-hero .hero-bg{
+  background-image:url('/assets/images/dcast-home-approved-hd-20260826-150509.webp')!important;
+  background-color:#7fa6ce!important;
+  background-position:center 118px!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  filter:none!important;
+  transform:none!important;
+  transition:none!important;
+  will-change:auto!important;
+}
+body .dcast-home-approved-hero .hero-bg::after{
+  content:'';
+  position:absolute;
+  z-index:0;
+  top:0;
+  left:0;
+  right:0;
+  height:154px;
+  pointer-events:none;
+  background:linear-gradient(90deg,
+    #969ba5 0%,
+    #7ba6d5 25%,
+    #6198d1 50%,
+    #1c2028 75%,
+    #414960 100%);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 72%,rgba(0,0,0,.68) 84%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0%,#000 72%,rgba(0,0,0,.68) 84%,transparent 100%);
+}
+body .dcast-home-approved-hero::before{
+  z-index:1!important;
+  background:linear-gradient(90deg,rgba(5,15,30,.89) 0%,rgba(5,15,30,.76) 28%,rgba(5,15,30,.52) 45%,rgba(5,15,30,.16) 66%,rgba(5,15,30,.02) 82%)!important;
+}
+body .dcast-home-approved-hero>.container{z-index:2!important;}
+
+@media (max-width:899px){
+  body .dcast-home-approved-hero{
+    min-height:100svh!important;
+    padding-top:124px!important;
+  }
+  body .dcast-home-approved-hero .hero-bg{
+    background-position:66% 88px!important;
+  }
+  body .dcast-home-approved-hero .hero-bg::after{
+    height:122px;
+    background:linear-gradient(90deg,#889eb9 0%,#739bc5 52%,#37475d 100%);
+  }
+  body .dcast-home-approved-hero::before{
+    background:linear-gradient(180deg,rgba(4,13,26,.08) 0%,rgba(4,13,26,.16) 32%,rgba(4,13,26,.68) 66%,rgba(4,13,26,.96) 100%)!important;
+  }
+}

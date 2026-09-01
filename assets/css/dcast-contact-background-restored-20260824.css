@@ -1,0 +1,30 @@
+/* DCAST_CONTACT_BACKGROUND_RESTORED_20260824 */
+main.dcast-premium-contact-page {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7, 10, 34, 0.94) 0%,
+      rgba(13, 18, 54, 0.86) 48%,
+      rgba(7, 57, 58, 0.70) 100%
+    ),
+    url("/assets/images/dcast-shared-hero.jpg") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+@media (max-width: 760px) {
+  main.dcast-premium-contact-page {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(7, 10, 34, 0.94) 0%,
+        rgba(8, 13, 42, 0.88) 52%,
+        rgba(5, 43, 48, 0.80) 100%
+      ),
+      url("/assets/images/dcast-shared-hero.jpg") !important;
+    background-position: center top !important;
+    background-attachment: scroll !important;
+  }
+}

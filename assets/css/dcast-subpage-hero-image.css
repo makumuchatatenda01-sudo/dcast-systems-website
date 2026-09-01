@@ -1,0 +1,105 @@
+/* DCAST_SHARED_SUBPAGE_HERO_IMAGE_20260804 */
+
+.dcast-current-subpage .dcast-page-banner,
+.dcast-current-subpage .about-hero {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 14, 45, .91) 0%,
+      rgba(15, 22, 60, .80) 46%,
+      rgba(8, 64, 66, .55) 100%
+    ),
+    url("/assets/images/dcast-shared-hero.jpg")
+      center 45% / cover no-repeat !important;
+}
+
+.dcast-current-subpage .dcast-page-banner::before,
+.dcast-current-subpage .about-hero::before {
+  z-index: 1;
+  opacity: 1 !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 12, 36, .16) 0%,
+      rgba(8, 12, 36, .28) 55%,
+      rgba(6, 10, 30, .48) 100%
+    ) !important;
+  pointer-events: none;
+}
+
+.dcast-current-subpage .dcast-page-banner .container,
+.dcast-current-subpage .about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.dcast-current-subpage .dcast-page-banner h1,
+.dcast-current-subpage .about-hero h1 {
+  color: #ffffff;
+  text-shadow:
+    0 3px 10px rgba(0, 0, 0, .64),
+    0 12px 32px rgba(0, 0, 0, .38);
+}
+
+.dcast-current-subpage .dcast-page-banner p,
+.dcast-current-subpage .about-hero p {
+  color: rgba(255, 255, 255, .86);
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, .62);
+}
+
+.dcast-current-subpage .dcast-page-banner span,
+.dcast-current-subpage .about-hero .about-eyebrow {
+  color: #67e7ad;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, .62);
+}
+
+/* Contact page uses a full-height premium hero layout. */
+.dcast-premium-contact-page {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 10, 34, .94) 0%,
+      rgba(13, 18, 54, .86) 48%,
+      rgba(7, 57, 58, .70) 100%
+    ),
+    url("/assets/images/dcast-shared-hero.jpg")
+      center / cover no-repeat !important;
+}
+
+.dcast-premium-contact-page > section {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 760px) {
+  .dcast-current-subpage .dcast-page-banner,
+  .dcast-current-subpage .about-hero {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(9, 13, 42, .88) 0%,
+        rgba(8, 13, 40, .84) 58%,
+        rgba(5, 43, 48, .72) 100%
+      ),
+      url("/assets/images/dcast-shared-hero.jpg")
+        center / cover no-repeat !important;
+  }
+
+  .dcast-premium-contact-page {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(7, 10, 34, .92) 0%,
+        rgba(8, 13, 42, .86) 52%,
+        rgba(5, 43, 48, .78) 100%
+      ),
+      url("/assets/images/dcast-shared-hero.jpg")
+        center / cover no-repeat !important;
+  }
+}

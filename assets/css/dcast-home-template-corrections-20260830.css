@@ -1,0 +1,105 @@
+/* DCAST HOMEPAGE TEMPLATE CORRECTIONS — 20260830
+   Restore the approved navigation; keep the new hero motion and artwork. */
+
+/* Approved original floating navbar. */
+body .navwrap{
+  top:14px!important;
+  padding:0 12px!important;
+}
+body .navwrap .island{
+  width:100%!important;
+  max-width:1100px!important;
+  min-height:0!important;
+  padding:.45rem .55rem .45rem 1rem!important;
+  border:1px solid rgba(46,52,128,.10)!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.90)!important;
+  box-shadow:0 10px 40px rgba(18,20,58,.18)!important;
+  backdrop-filter:blur(18px)!important;
+  -webkit-backdrop-filter:blur(18px)!important;
+}
+body .navwrap .brand-name .n1{
+  color:var(--green)!important;
+}
+body .navwrap .brand-name .n1 b{
+  color:var(--blue)!important;
+}
+body .navwrap .brand-name .n2{
+  color:var(--grey)!important;
+}
+body .navwrap nav a{
+  color:var(--ink)!important;
+}
+body .navwrap nav a:hover,
+body .navwrap nav a.active{
+  color:var(--green-dark)!important;
+  background:rgba(13,154,92,.10)!important;
+}
+body .navwrap .burger span{
+  background:var(--blue)!important;
+}
+body .navwrap .nav-cta,
+body .navwrap a.nav-cta{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:48px!important;
+  padding:.7rem 1.35rem!important;
+  line-height:1!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+}
+
+/* Full-bleed hero: only the lower outside edge is rounded. */
+body .dcast-home-template-hero{
+  width:100%!important;
+  margin:0!important;
+  border-radius:0 0 40px 40px!important;
+}
+
+/* Three balanced, deliberate headline rows. */
+body .dcast-home-template-hero>.container{
+  width:min(1120px,calc(100% - 64px))!important;
+}
+body .dcast-home-template-hero .home-hero-main{
+  width:100%!important;
+  max-width:1080px!important;
+  font-size:clamp(3rem,4.85vw,5.45rem)!important;
+  line-height:.98!important;
+}
+body .dcast-home-template-hero .home-hero-main>span{
+  display:block;
+  white-space:nowrap;
+}
+
+@media (max-width:899px){
+  body .navwrap .island{
+    min-height:0!important;
+    border-radius:999px!important;
+  }
+  body .dcast-home-template-hero{
+    border-radius:0 0 28px 28px!important;
+  }
+  body .dcast-home-template-hero>.container{
+    width:min(94%,720px)!important;
+  }
+  body .dcast-home-template-hero .home-hero-main{
+    font-size:clamp(2.35rem,8vw,4.4rem)!important;
+  }
+}
+
+@media (max-width:520px){
+  body .navwrap{
+    padding:0 10px!important;
+  }
+  body .navwrap .island{
+    padding:.4rem .55rem .4rem .75rem!important;
+  }
+  body .dcast-home-template-hero>.container{
+    width:calc(100% - 28px)!important;
+  }
+  body .dcast-home-template-hero .home-hero-main{
+    font-size:clamp(1.9rem,8vw,2.75rem)!important;
+    letter-spacing:-.04em!important;
+  }
+}

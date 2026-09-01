@@ -1,0 +1,714 @@
+/* DCAST_PREMIUM_CONTACT_20260804 */
+
+:root {
+  --dcast-contact-navy: #111438;
+  --dcast-contact-navy-soft: #1b2052;
+  --dcast-contact-green: #67d9a4;
+  --dcast-contact-green-dark: #087e62;
+  --dcast-contact-gold: #c9a57f;
+  --dcast-contact-cream: #f7f4ef;
+  --dcast-contact-muted: #9ca2b8;
+  --dcast-contact-shadow:
+    0 34px 90px rgba(4, 7, 30, .42);
+}
+
+.dcast-premium-contact-page {
+  min-height: 100vh;
+  padding-top: 106px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 82% 16%,
+      rgba(103, 217, 164, .12),
+      transparent 29%
+    ),
+    linear-gradient(
+      135deg,
+      #0a0d27 0%,
+      var(--dcast-contact-navy) 60%,
+      #082b24 145%
+    );
+}
+
+.dcast-premium-contact-shell {
+  width: min(1220px, 92%);
+  margin: 0 auto;
+}
+
+.dcast-premium-contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  gap: 5rem;
+  align-items: center;
+  min-height: 710px;
+  padding: 74px 0 90px;
+}
+
+.dcast-contact-left {
+  max-width: 520px;
+}
+
+.dcast-contact-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  margin-bottom: 1rem;
+  color: var(--dcast-contact-green);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.dcast-contact-eyebrow::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: var(--dcast-contact-green);
+}
+
+.dcast-contact-heading {
+  margin: 0;
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(3.4rem, 6vw, 6rem);
+  line-height: .93;
+  letter-spacing: -.045em;
+}
+
+.dcast-contact-heading span {
+  color: var(--dcast-contact-green);
+}
+
+.dcast-contact-accent {
+  width: 76px;
+  height: 4px;
+  margin: 1.7rem 0;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--dcast-contact-green),
+      var(--dcast-contact-gold)
+    );
+}
+
+.dcast-contact-lead {
+  max-width: 470px;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, .68);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.dcast-contact-info {
+  padding: .5rem 1.45rem;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 20px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, .075),
+      rgba(255, 255, 255, .025)
+    );
+  box-shadow: 0 24px 65px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(8px);
+}
+
+.dcast-contact-info-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.05rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .075);
+}
+
+.dcast-contact-info-item:last-child {
+  border-bottom: 0;
+}
+
+.dcast-contact-info-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--dcast-contact-cream);
+  color: var(--dcast-contact-green-dark);
+}
+
+.dcast-contact-info-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.dcast-contact-info-title {
+  margin-bottom: .25rem;
+  color: #fff;
+  font-size: .77rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.dcast-contact-info-body,
+.dcast-contact-info-body a {
+  color: var(--dcast-contact-muted);
+  font-size: .93rem;
+  line-height: 1.55;
+}
+
+.dcast-contact-info-body a:hover {
+  color: var(--dcast-contact-green);
+}
+
+.dcast-contact-form-wrap {
+  position: relative;
+  padding-right: 56px;
+}
+
+.dcast-contact-form-card {
+  position: relative;
+  padding: 3rem 3.3rem 3.3rem;
+  overflow: visible;
+  border-radius: 26px;
+  background: var(--dcast-contact-cream);
+  color: #242536;
+  box-shadow: var(--dcast-contact-shadow);
+  clip-path:
+    polygon(
+      0 0,
+      calc(100% - 58px) 0,
+      100% 9%,
+      100% calc(100% - 9%),
+      calc(100% - 58px) 100%,
+      0 100%
+    );
+}
+
+.dcast-contact-form-card::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: 16px;
+  width: 125px;
+  height: 42px;
+  opacity: .42;
+  background:
+    radial-gradient(
+      #ddd5ca 4px,
+      transparent 5px
+    );
+  background-size: 18px 18px;
+  pointer-events: none;
+}
+
+.dcast-contact-form-top {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2rem;
+}
+
+.dcast-contact-form-top h2 {
+  margin: 0 0 .55rem;
+  color: var(--dcast-contact-green-dark);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.dcast-contact-form-top p {
+  margin: 0;
+  color: #6b6b75;
+  line-height: 1.65;
+}
+
+.dcast-premium-form {
+  position: relative;
+  z-index: 2;
+}
+
+.dcast-contact-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.45rem 1.7rem;
+}
+
+.dcast-contact-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.dcast-contact-field.full {
+  grid-column: 1 / -1;
+}
+
+.dcast-contact-field-label {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-bottom: .55rem;
+  color: #40414b;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.dcast-contact-field-label svg {
+  width: 16px;
+  height: 16px;
+  color: var(--dcast-contact-green-dark);
+}
+
+.dcast-contact-field input,
+.dcast-contact-field select,
+.dcast-contact-field textarea {
+  width: 100%;
+  padding: .65rem .25rem .7rem;
+  border: 0;
+  border-bottom: 1px solid #d8d4ce;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  color: #242536;
+  font: inherit;
+  font-size: .93rem;
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    transform .2s ease;
+}
+
+.dcast-contact-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.dcast-contact-field input:focus,
+.dcast-contact-field select:focus,
+.dcast-contact-field textarea:focus {
+  border-color: var(--dcast-contact-green-dark);
+  box-shadow:
+    0 3px 0 rgba(8, 126, 98, .08);
+  transform: translateY(-1px);
+}
+
+.dcast-contact-field [aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+.dcast-contact-send-tab {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  right: -56px;
+  width: 72px;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 18px;
+  background:
+    linear-gradient(
+      180deg,
+      #67d9a4,
+      #14966f
+    );
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .38);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.dcast-contact-send-tab:hover {
+  transform: translateY(-50%) translateX(4px);
+  box-shadow: 0 24px 58px rgba(0, 0, 0, .48);
+}
+
+.dcast-contact-send-label {
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.dcast-contact-plane-button {
+  position: absolute;
+  z-index: 6;
+  right: -48px;
+  bottom: -28px;
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border: 7px solid var(--dcast-contact-cream);
+  border-radius: 50%;
+  background: var(--dcast-contact-navy);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, .45);
+  transition:
+    transform .22s ease,
+    background .22s ease;
+}
+
+.dcast-contact-plane-button:hover {
+  background: var(--dcast-contact-green-dark);
+  transform: translateY(-4px) rotate(-4deg);
+}
+
+.dcast-contact-plane-button svg {
+  width: 22px;
+  height: 22px;
+}
+
+.dcast-contact-status {
+  display: none;
+  margin-top: 1.25rem;
+  padding: .9rem 1rem;
+  border-radius: 12px;
+  font-size: .88rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.dcast-contact-status.visible {
+  display: block;
+}
+
+.dcast-contact-status.success {
+  border: 1px solid rgba(8, 126, 98, .25);
+  background: rgba(103, 217, 164, .15);
+  color: var(--dcast-contact-green-dark);
+}
+
+.dcast-contact-status.error {
+  border: 1px solid rgba(180, 35, 24, .22);
+  background: rgba(180, 35, 24, .08);
+  color: #8f2017;
+}
+
+.dcast-contact-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
+.dcast-response-strip {
+  padding: 0 0 64px;
+}
+
+.dcast-response-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 1.1rem 1.4rem;
+  border-radius: 16px;
+  background: var(--dcast-contact-cream);
+  color: #242536;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .2);
+}
+
+.dcast-response-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 14px;
+  background: var(--dcast-contact-navy);
+  color: var(--dcast-contact-green);
+}
+
+.dcast-response-copy strong {
+  display: block;
+  margin-bottom: .2rem;
+  color: var(--dcast-contact-navy);
+}
+
+.dcast-response-copy span {
+  color: #777985;
+  font-size: .88rem;
+}
+
+.dcast-home-premium-contact {
+  position: relative;
+  padding: 98px 0;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 86% 18%,
+      rgba(103, 217, 164, .15),
+      transparent 30%
+    ),
+    var(--dcast-contact-navy);
+}
+
+.dcast-home-contact-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.dcast-home-contact-copy h2 {
+  margin: 1rem 0;
+  color: #fff;
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.dcast-home-contact-copy p {
+  max-width: 470px;
+  color: rgba(255, 255, 255, .68);
+  line-height: 1.8;
+}
+
+.dcast-home-contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-top: 1.5rem;
+}
+
+.dcast-home-contact-card {
+  padding: 2rem;
+  border-radius: 24px;
+  background: var(--dcast-contact-cream);
+  box-shadow: var(--dcast-contact-shadow);
+}
+
+.dcast-home-contact-card .dcast-contact-fields {
+  gap: 1rem 1.25rem;
+}
+
+.dcast-home-contact-card .dcast-contact-field textarea {
+  min-height: 82px;
+}
+
+.dcast-home-contact-submit {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 1.3rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--dcast-contact-green-dark);
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.dcast-home-contact-submit:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 28px rgba(8, 126, 98, .25);
+}
+
+@keyframes dcastContactEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.dcast-premium-contact-ready
+.dcast-contact-left,
+body.dcast-premium-contact-ready
+.dcast-contact-form-wrap,
+body.dcast-premium-contact-ready
+.dcast-home-contact-copy,
+body.dcast-premium-contact-ready
+.dcast-home-contact-card {
+  animation:
+    dcastContactEntrance .65s ease both;
+}
+
+body.dcast-premium-contact-ready
+.dcast-contact-form-wrap,
+body.dcast-premium-contact-ready
+.dcast-home-contact-card {
+  animation-delay: .1s;
+}
+
+@media (max-width: 980px) {
+  .dcast-premium-contact-grid,
+  .dcast-home-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .dcast-contact-left {
+    max-width: none;
+  }
+
+  .dcast-contact-form-wrap {
+    padding-right: 42px;
+  }
+
+  .dcast-contact-send-tab {
+    right: -42px;
+    width: 58px;
+  }
+
+  .dcast-contact-plane-button {
+    right: -38px;
+  }
+}
+
+@media (max-width: 650px) {
+  .dcast-premium-contact-page {
+    padding-top: 88px;
+  }
+
+  .dcast-premium-contact-grid {
+    min-height: auto;
+    padding: 58px 0 74px;
+  }
+
+  .dcast-contact-heading {
+    font-size: clamp(3rem, 15vw, 4.4rem);
+  }
+
+  .dcast-contact-form-wrap {
+    padding-right: 0;
+  }
+
+  .dcast-contact-form-card {
+    padding: 2.1rem 1.4rem 2.5rem;
+    border-radius: 20px;
+    clip-path: none;
+  }
+
+  .dcast-contact-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .dcast-contact-field.full {
+    grid-column: auto;
+  }
+
+  .dcast-contact-send-tab {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: 54px;
+    margin-top: 1.4rem;
+    border-radius: 14px;
+    transform: none;
+  }
+
+  .dcast-contact-send-tab:hover {
+    transform: translateY(-2px);
+  }
+
+  .dcast-contact-send-label {
+    writing-mode: initial;
+    transform: none;
+  }
+
+  .dcast-contact-plane-button {
+    right: 12px;
+    bottom: -30px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .dcast-response-strip {
+    padding-bottom: 48px;
+  }
+
+  .dcast-home-premium-contact {
+    padding: 72px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dcast-contact-field input,
+  .dcast-contact-field select,
+  .dcast-contact-field textarea,
+  .dcast-contact-send-tab,
+  .dcast-contact-plane-button,
+  .dcast-home-contact-submit,
+  body.dcast-premium-contact-ready
+  .dcast-contact-left,
+  body.dcast-premium-contact-ready
+  .dcast-contact-form-wrap,
+  body.dcast-premium-contact-ready
+  .dcast-home-contact-copy,
+  body.dcast-premium-contact-ready
+  .dcast-home-contact-card {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+
+/* DCAST_GREEN_SEND_TAB_20260804 */
+.dcast-contact-send-tab:hover {
+  background:
+    linear-gradient(
+      180deg,
+      #7be9b8,
+      #087e62
+    );
+}
+
+.dcast-contact-send-tab:focus-visible,
+.dcast-contact-plane-button:focus-visible,
+.dcast-home-contact-submit:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* DCAST_CURRENT_CONTACT_BACKGROUND */
+.dcast-premium-contact-page {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 10, 34, .94) 0%,
+      rgba(13, 18, 54, .86) 48%,
+      rgba(7, 57, 58, .70) 100%
+    ),
+    url("/assets/images/dcast-shared-hero.jpg") center / cover no-repeat !important;
+}
+.dcast-premium-contact-page > section {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 760px) {
+  .dcast-premium-contact-page {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(7, 10, 34, .92) 0%,
+        rgba(8, 13, 42, .86) 52%,
+        rgba(5, 43, 48, .78) 100%
+      ),
+      url("/assets/images/dcast-shared-hero.jpg") center / cover no-repeat !important;
+  }
+}

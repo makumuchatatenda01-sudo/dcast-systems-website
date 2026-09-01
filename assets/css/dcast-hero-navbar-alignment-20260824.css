@@ -1,0 +1,9 @@
+/* DCAST shared hero/navbar alignment fix — 2026-08-24 */
+main.dcast-current-subpage.dcast-overlay-hero-page{
+  padding-top:0!important;
+}
+@media (min-width:821px){
+  body.dcast-guarding-page .dcast-about-v1-photo{
+    background-position:center 18%!important;
+  }
+}

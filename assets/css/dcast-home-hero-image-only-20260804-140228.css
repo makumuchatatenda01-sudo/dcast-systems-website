@@ -1,0 +1,9 @@
+/* DCAST_HOMEPAGE_HERO_IMAGE_ONLY_20260804 */
+
+/*
+ * Only the image URL is changed.
+ * Existing position, size, filter, overlays, text and layout remain untouched.
+ */
+.hero-bg {
+  background-image: url("/assets/images/dcast-home-hero-image-only-20260804-140228.webp") !important;
+}

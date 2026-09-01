@@ -1,0 +1,7 @@
+/* DCAST Systems hero gap correction — 2026-08-24
+   The site-wide section rule adds 5.5rem to every section.
+   The Systems hero manages its own internal spacing and must not inherit it. */
+.systems-showcase-page > .sys-hero {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}

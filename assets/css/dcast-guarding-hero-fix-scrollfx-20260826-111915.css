@@ -1,0 +1,43 @@
+/* === GUARDING HERO IMAGE FIX + SCROLL EFFECTS === */
+body.dcast-guarding-page .dcast-about-v1-hero{
+  position:relative;
+  overflow:hidden;
+  min-height:60vh !important;
+}
+body.dcast-guarding-page .dcast-about-v1-photo{
+  position:absolute !important;
+  inset:0 !important;
+  background-position:center 35% !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  will-change:transform;
+  transform:translateZ(0) scale(1.08);
+  transition:transform .1s linear;
+}
+body.dcast-guarding-page .dcast-about-v1-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
+}
+body.dcast-guarding-page .dcast-about-v1-content{
+  position:relative;
+  z-index:2;
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .8s ease, transform .8s ease;
+}
+body.dcast-guarding-page .dcast-about-v1-content.in{
+  opacity:1;
+  transform:none;
+}
+@media (prefers-reduced-motion: reduce){
+  body.dcast-guarding-page .dcast-about-v1-photo{
+    transform:translateZ(0) scale(1.08) !important;
+    transition:none !important;
+  }
+  body.dcast-guarding-page .dcast-about-v1-content{
+    opacity:1 !important;
+    transform:none !important;
+    transition:none !important;
+  }
+}

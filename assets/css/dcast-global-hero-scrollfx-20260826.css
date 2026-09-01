@@ -1,0 +1,115 @@
+/* DCAST GLOBAL HERO IMAGE FIX + SCROLL EFFECTS — 2026-08-26 */
+.hero,
+.dcast-about-v1-hero,
+.sys-hero,
+.dcast-premium-contact-page,
+.dcast-page-banner {
+  --dcast-hero-parallax-y: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dcast-about-v1-hero {
+  min-height: 60vh;
+}
+
+.hero-bg,
+.dcast-about-v1-photo {
+  position: absolute !important;
+  inset: 0 !important;
+  background-position: center 35% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  will-change: transform;
+  transform: translateZ(0) scale(1.08) translateY(var(--dcast-hero-parallax-y));
+  transform-origin: center center;
+  transition: transform .1s linear;
+}
+
+.dcast-about-v1-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.dcast-about-v1-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Systems uses a pseudo-element for its NP200 background. */
+.sys-hero::before {
+  will-change: transform;
+  transform: translateZ(0) scale(1.08) translateY(var(--dcast-hero-parallax-y)) !important;
+  transform-origin: center center !important;
+  transition: transform .1s linear !important;
+}
+
+/* Contact and Quote store their hero photos as the second background layer. */
+.dcast-premium-contact-page {
+  background-position: center center, center calc(35% + var(--dcast-hero-parallax-y)) !important;
+  background-size: cover, auto 112% !important;
+  background-repeat: no-repeat !important;
+  transition: background-position .1s linear;
+}
+
+.dcast-page-banner {
+  background-position: center center, center calc(35% + var(--dcast-hero-parallax-y)) !important;
+  background-size: cover, cover !important;
+  background-repeat: no-repeat !important;
+  transition: background-position .1s linear;
+}
+
+/* Shared hero text reveal. */
+.hero > .container,
+.hero-msg,
+.hero-strip,
+.dcast-about-v1-content,
+.sys-hero-copy,
+.dcast-contact-left,
+.dcast-page-banner > .container {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.hero > .container.in,
+.hero-msg.in,
+.hero-strip.in,
+.dcast-about-v1-content.in,
+.sys-hero-copy.in,
+.dcast-contact-left.in,
+.dcast-page-banner > .container.in {
+  opacity: 1;
+  transform: none;
+}
+
+.hero-msg { transition-delay: .08s; }
+.hero-strip { transition-delay: .16s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg,
+  .dcast-about-v1-photo,
+  .sys-hero::before {
+    transform: translateZ(0) scale(1.08) !important;
+    transition: none !important;
+  }
+
+  .dcast-premium-contact-page,
+  .dcast-page-banner {
+    background-position: center center, center 35% !important;
+    transition: none !important;
+  }
+
+  .hero > .container,
+  .hero-msg,
+  .hero-strip,
+  .dcast-about-v1-content,
+  .sys-hero-copy,
+  .dcast-contact-left,
+  .dcast-page-banner > .container {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,19 @@
+DCAST website icon library
+
+Library: Bootstrap Icons
+Pinned version: 1.13.1
+
+Social icons:
+- facebook.svg
+- instagram.svg
+- twitter-x.svg
+- linkedin.svg
+- whatsapp.svg
+
+Interface and contact icons:
+- share-fill.svg
+- geo-alt-fill.svg
+- telephone-fill.svg
+- envelope-fill.svg
+
+All icon assets are stored locally inside this website release.

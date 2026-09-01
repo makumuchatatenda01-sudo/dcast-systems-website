@@ -1,0 +1,159 @@
+/* Supplied client logos, isolated from the shared navbar and hero styling. */
+section.dcast-client-brands {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 64px 0 42px !important;
+  overflow: hidden;
+  background: #fff !important;
+  border-block: 1px solid #e9edf2;
+  color: #12143a;
+  scroll-margin-top: 112px;
+}
+.dcast-client-brands .dcast-client-brands__heading {
+  padding: 0 24px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+.dcast-client-brands .dcast-client-brands__eyebrow {
+  display: block;
+  margin: 0 0 12px;
+  color: #0a8551;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+.dcast-client-brands .dcast-client-brands__title {
+  margin: 0;
+  color: #12143a;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  text-align: center;
+}
+.dcast-client-brands .dcast-client-brands__viewport {
+  width: 100%;
+  outline-offset: -4px;
+}
+.dcast-client-brands .dcast-client-brands__viewport:focus-visible {
+  outline: 2px solid #0a8551;
+}
+.dcast-client-brands .dcast-client-brands__track { width: 100%; }
+.dcast-client-brands .dcast-client-brands__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.dcast-client-brands .dcast-client-brands__item {
+  display: flex;
+  flex: 0 0 264px;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 124px;
+  margin: 0;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  list-style: none;
+}
+.dcast-client-brands .dcast-client-brands__item::before { content: none; }
+.dcast-client-brands .dcast-client-brands__item img {
+  display: block;
+  width: 224px;
+  height: 94px;
+  max-width: 100%;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 1;
+  filter: none;
+  transform: none;
+}
+.dcast-client-brands .dcast-client-brands__item--cbre img { width: 200px; }
+.dcast-client-brands .dcast-client-brands__item--mashonaland-holdings img { width: 232px; }
+.dcast-client-brands .dcast-client-brands__item--zb img { width: 166px; height: 98px; }
+.dcast-client-brands .dcast-client-brands__group[data-clone] { display: none; }
+.dcast-client-brands.is-ready:not(.is-reduced-motion) .dcast-client-brands__viewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+.dcast-client-brands.is-ready:not(.is-reduced-motion) .dcast-client-brands__track {
+  display: flex;
+  width: max-content;
+  animation: dcast-client-brands-scroll 30s linear infinite;
+  will-change: transform;
+}
+.dcast-client-brands.is-ready:not(.is-reduced-motion) .dcast-client-brands__group {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  min-width: 100vw;
+  margin: 0;
+}
+.dcast-client-brands.is-paused .dcast-client-brands__track,
+.dcast-client-brands.is-offscreen .dcast-client-brands__track,
+.dcast-client-brands.is-document-hidden .dcast-client-brands__track,
+.dcast-client-brands .dcast-client-brands__viewport:focus-within .dcast-client-brands__track {
+  animation-play-state: paused !important;
+}
+@media (hover: hover) {
+  .dcast-client-brands .dcast-client-brands__viewport:hover .dcast-client-brands__track {
+    animation-play-state: paused !important;
+  }
+}
+.dcast-client-brands .dcast-client-brands__controls { text-align: center; margin-top: 12px; }
+.dcast-client-brands .dcast-client-brands__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid #dce3e8;
+  border-radius: 24px;
+  background: #fff;
+  color: #435166;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .015em;
+  box-shadow: none;
+  cursor: pointer;
+}
+.dcast-client-brands .dcast-client-brands__toggle:hover { border-color: #0a8551; color: #0a8551; }
+.dcast-client-brands .dcast-client-brands__toggle:focus-visible { outline: 2px solid #0a8551; outline-offset: 3px; }
+.dcast-client-brands [hidden] { display: none !important; }
+@keyframes dcast-client-brands-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (max-width: 600px) {
+  section.dcast-client-brands { padding: 44px 0 30px !important; }
+  .dcast-client-brands .dcast-client-brands__heading { margin-bottom: 14px; }
+  .dcast-client-brands .dcast-client-brands__item { flex-basis: 216px; width: 216px; height: 108px; padding: 10px 12px; }
+  .dcast-client-brands .dcast-client-brands__item img { width: 192px; height: 84px; }
+  .dcast-client-brands .dcast-client-brands__item--cbre img { width: 178px; }
+  .dcast-client-brands .dcast-client-brands__item--zb img { width: 145px; height: 88px; }
+  .dcast-client-brands:not(.is-ready) .dcast-client-brands__item,
+  .dcast-client-brands.is-reduced-motion .dcast-client-brands__item { flex-basis: 50%; width: 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dcast-client-brands .dcast-client-brands__track { display: block !important; width: 100% !important; animation: none !important; transform: none !important; will-change: auto !important; }
+  .dcast-client-brands .dcast-client-brands__viewport { overflow: visible !important; mask-image: none !important; -webkit-mask-image: none !important; }
+  .dcast-client-brands .dcast-client-brands__group { flex-wrap: wrap !important; min-width: 0 !important; justify-content: center !important; }
+  .dcast-client-brands .dcast-client-brands__group[data-clone],
+  .dcast-client-brands .dcast-client-brands__controls { display: none !important; }
+}
