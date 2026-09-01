@@ -1,0 +1,355 @@
+/* DCAST SUBPAGE MOBILE HERO TEMPLATE — 20260901
+   Applies the approved homepage hero treatment to subpages on mobile only. */
+
+.dcast-mobile-page-seal,
+.dcast-mobile-hero-actions,
+.dcast-contact-mobile-hero{
+  display:none!important;
+}
+
+@media (max-width:720px){
+  /* Shared homepage-style hero structure */
+  body .dcast-about-v1-hero,
+  body .sys-hero,
+  body .dcast-page-banner,
+  body .dcast-contact-mobile-hero{
+    position:relative!important;
+    isolation:isolate!important;
+    width:100%!important;
+    min-height:100svh!important;
+    margin:0!important;
+    border-radius:0 0 28px 28px!important;
+    overflow:hidden!important;
+    background-color:#071224!important;
+  }
+
+  /* About, Services and Why Us */
+  body .dcast-about-v1-hero{
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:center!important;
+    padding:112px 16px 82px!important;
+  }
+
+  body .dcast-about-v1-photo{
+    inset:0!important;
+    z-index:-3!important;
+    background-position:62% center!important;
+    background-size:cover!important;
+    filter:none!important;
+    transform:translateZ(0) scale(1.08)!important;
+  }
+
+  body.dcast-guarding-page .dcast-about-v1-photo{
+    background-position:58% 35%!important;
+  }
+
+  body .dcast-about-v1-overlay{
+    inset:0!important;
+    z-index:-2!important;
+    background:
+      linear-gradient(180deg,rgba(4,10,22,.25) 0%,rgba(4,10,22,.44) 36%,rgba(4,10,22,.88) 76%,rgba(4,10,22,.97) 100%)!important;
+  }
+
+  body .dcast-about-v1-content{
+    width:calc(100% - 4px)!important;
+    max-width:620px!important;
+    margin:0 auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+
+  body .dcast-about-v1-eyebrow,
+  body .sys-hero .sys-kicker,
+  body .dcast-page-banner .container>span,
+  body .dcast-contact-mobile-hero .dcast-mobile-hero-eyebrow{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    max-width:100%!important;
+    margin:0 auto 18px!important;
+    padding:11px 16px!important;
+    border:1px solid rgba(255,255,255,.14)!important;
+    border-radius:999px!important;
+    background:rgba(24,31,78,.82)!important;
+    color:#70e7b5!important;
+    font-family:'Jost',sans-serif!important;
+    font-size:.68rem!important;
+    font-weight:700!important;
+    line-height:1.25!important;
+    letter-spacing:.15em!important;
+    text-align:center!important;
+    text-transform:uppercase!important;
+    box-shadow:0 10px 28px rgba(0,0,0,.18)!important;
+    backdrop-filter:blur(9px)!important;
+    -webkit-backdrop-filter:blur(9px)!important;
+  }
+
+  body .dcast-about-v1-eyebrow::before,
+  body .dcast-about-v1-eyebrow::after{
+    display:none!important;
+  }
+
+  body .dcast-about-v1-hero h1,
+  body .sys-hero .sys-hero-title,
+  body .dcast-page-banner h1,
+  body .dcast-contact-mobile-hero h1{
+    width:100%!important;
+    max-width:620px!important;
+    margin:0 auto!important;
+    color:#fff!important;
+    font-family:'Jost',sans-serif!important;
+    font-size:clamp(2.15rem,10vw,3.25rem)!important;
+    font-weight:800!important;
+    line-height:.98!important;
+    letter-spacing:-.04em!important;
+    text-align:center!important;
+    text-transform:uppercase!important;
+    text-wrap:balance!important;
+    text-shadow:0 8px 30px rgba(0,0,0,.50)!important;
+  }
+
+  body .dcast-about-v1-hero p,
+  body .sys-hero .sys-copy,
+  body .dcast-page-banner p,
+  body .dcast-contact-mobile-hero p{
+    width:100%!important;
+    max-width:560px!important;
+    margin:20px auto 24px!important;
+    color:rgba(255,255,255,.86)!important;
+    font-family:'Jost',sans-serif!important;
+    font-size:.95rem!important;
+    font-weight:400!important;
+    line-height:1.55!important;
+    text-align:center!important;
+    text-shadow:0 3px 18px rgba(0,0,0,.44)!important;
+  }
+
+  body .dcast-about-v1-curve,
+  body .dcast-about-v1-mark{
+    display:none!important;
+  }
+
+  /* Homepage-style action buttons on each mobile subpage hero */
+  body .dcast-mobile-hero-actions,
+  body .sys-hero-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+    width:100%!important;
+    max-width:560px!important;
+    margin:0 auto!important;
+  }
+
+  body .dcast-mobile-hero-actions a,
+  body .sys-hero-actions .sys-btn{
+    width:100%!important;
+    min-height:54px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:0 22px!important;
+    border-radius:999px!important;
+    font-family:'Jost',sans-serif!important;
+    font-size:.93rem!important;
+    font-weight:700!important;
+    line-height:1.2!important;
+    text-align:center!important;
+  }
+
+  body .dcast-mobile-hero-actions .primary{
+    border:1px solid #0cad70!important;
+    background:#0cad70!important;
+    color:#fff!important;
+    box-shadow:0 14px 34px rgba(12,173,112,.28)!important;
+  }
+
+  body .dcast-mobile-hero-actions .secondary{
+    border:1.5px solid rgba(255,255,255,.76)!important;
+    background:rgba(6,14,28,.34)!important;
+    color:#fff!important;
+    backdrop-filter:blur(5px)!important;
+  }
+
+  /* Systems: keep its photograph, simplify the collage into the same mobile hierarchy */
+  body .sys-hero{
+    display:flex!important;
+    align-items:flex-end!important;
+    padding:0!important;
+  }
+
+  body .sys-hero::before{
+    inset:0!important;
+    width:auto!important;
+    height:auto!important;
+    background-position:68% center!important;
+    background-size:cover!important;
+    filter:none!important;
+    transform:translateZ(0) scale(1.04)!important;
+    opacity:1!important;
+  }
+
+  body .sys-hero::after{
+    inset:0!important;
+    background:linear-gradient(180deg,rgba(4,10,22,.25),rgba(4,10,22,.46) 38%,rgba(4,10,22,.90) 78%,rgba(4,10,22,.98))!important;
+  }
+
+  body .sys-hero-grid{
+    width:calc(100% - 28px)!important;
+    min-height:100svh!important;
+    margin:0 auto!important;
+    padding:112px 0 82px!important;
+    display:flex!important;
+    align-items:flex-end!important;
+  }
+
+  body .sys-hero-copy{
+    width:100%!important;
+    max-width:620px!important;
+    margin:0 auto!important;
+    padding:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+
+  body .sys-hero-title br{display:none!important}
+  body .sys-hero-title .green{color:#55e2ab!important}
+  body .sys-hero-visual,
+  body .sys-feature-strip{display:none!important}
+
+  /* Request Quote banner */
+  body .dcast-page-banner{
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:center!important;
+    padding:112px 16px 82px!important;
+    background-image:
+      linear-gradient(180deg,rgba(4,10,22,.25),rgba(4,10,22,.48) 40%,rgba(4,10,22,.92) 82%,rgba(4,10,22,.98)),
+      url('/assets/images/dcast-shared-hero.jpg')!important;
+    background-position:center!important;
+    background-size:cover!important;
+  }
+
+  body .dcast-page-banner>.container{
+    position:relative!important;
+    z-index:2!important;
+    width:100%!important;
+    max-width:620px!important;
+    margin:0 auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+
+  /* Contact gets a clean hero, then the existing contact details and form */
+  body .dcast-contact-mobile-hero{
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:center!important;
+    padding:112px 16px 82px!important;
+    background-image:
+      linear-gradient(180deg,rgba(4,10,22,.25),rgba(4,10,22,.46) 38%,rgba(4,10,22,.91) 80%,rgba(4,10,22,.98)),
+      url('/assets/images/dcast-shared-hero.jpg')!important;
+    background-position:center!important;
+    background-size:cover!important;
+  }
+
+  body .dcast-contact-mobile-hero>.container{
+    position:relative!important;
+    z-index:2!important;
+    width:100%!important;
+    max-width:620px!important;
+    margin:0 auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+
+  body .dcast-premium-contact-page>.dcast-contact-mobile-hero+.dcast-mobile-page-seal+section{
+    padding-top:62px!important;
+  }
+
+  body .dcast-contact-left>.dcast-contact-eyebrow,
+  body .dcast-contact-left>.dcast-contact-heading,
+  body .dcast-contact-left>.dcast-contact-accent,
+  body .dcast-contact-left>.dcast-contact-lead{
+    display:none!important;
+  }
+
+  /* Matching overlap seal used between every mobile hero and page content */
+  body .dcast-mobile-page-seal{
+    position:relative!important;
+    z-index:20!important;
+    width:86px!important;
+    height:86px!important;
+    margin:-43px auto 18px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border:8px solid #fff!important;
+    border-radius:50%!important;
+    background:#fff!important;
+    color:#10223f!important;
+    box-shadow:0 15px 35px rgba(10,25,50,.22)!important;
+  }
+
+  body .dcast-mobile-page-seal::before{
+    content:''!important;
+    position:absolute!important;
+    inset:2px!important;
+    border:1px dashed rgba(16,34,63,.34)!important;
+    border-radius:50%!important;
+  }
+
+  body .dcast-mobile-page-seal svg{
+    position:relative!important;
+    z-index:1!important;
+    width:26px!important;
+    height:26px!important;
+    color:#0cad70!important;
+  }
+
+  body .dcast-mobile-page-seal strong{
+    position:relative!important;
+    z-index:1!important;
+    margin-top:1px!important;
+    color:#10223f!important;
+    font-family:'Jost',sans-serif!important;
+    font-size:.62rem!important;
+    line-height:1!important;
+    letter-spacing:.13em!important;
+  }
+
+  body .dcast-mobile-page-seal small{
+    position:relative!important;
+    z-index:1!important;
+    margin-top:3px!important;
+    color:#607086!important;
+    font-family:'Jost',sans-serif!important;
+    font-size:.44rem!important;
+    line-height:1!important;
+    letter-spacing:.18em!important;
+  }
+}
+
+@media (max-width:380px){
+  body .dcast-about-v1-hero h1,
+  body .sys-hero .sys-hero-title,
+  body .dcast-page-banner h1,
+  body .dcast-contact-mobile-hero h1{
+    font-size:clamp(1.95rem,9.5vw,2.55rem)!important;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  body .dcast-about-v1-photo,
+  body .sys-hero::before{transform:none!important}
+}

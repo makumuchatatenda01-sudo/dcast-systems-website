@@ -1,6 +1,6 @@
-/* DCAST MOBILE-ONLY UNIFIED HEADER — 20260901
-   Matches the approved mobile format across every route.
-   Desktop/tablet layouts above 720px are untouched. */
+/* DCAST MOBILE-ONLY UNIFIED HEADER — corrected 20260901
+   Keeps the original approved mobile proportions while using the refined source asset.
+   No rules in this file affect screens wider than 720px. */
 
 @media (max-width:720px){
   body .navwrap{
@@ -9,42 +9,43 @@
     left:0!important;
     right:0!important;
     width:100%!important;
-    padding:0 12px!important;
+    padding:0 10px!important;
     z-index:10000!important;
   }
 
   body .navwrap .island{
     width:100%!important;
     max-width:none!important;
-    height:76px!important;
-    min-height:76px!important;
-    padding:8px 10px 8px 18px!important;
-    gap:10px!important;
+    height:58px!important;
+    min-height:58px!important;
+    padding:6px 7px 6px 14px!important;
+    gap:8px!important;
     border:1px solid rgba(46,52,128,.10)!important;
     border-radius:999px!important;
     background:rgba(255,255,255,.96)!important;
-    box-shadow:0 15px 38px rgba(18,20,58,.18)!important;
-    backdrop-filter:blur(20px)!important;
-    -webkit-backdrop-filter:blur(20px)!important;
+    box-shadow:0 10px 30px rgba(18,20,58,.17)!important;
+    backdrop-filter:blur(18px)!important;
+    -webkit-backdrop-filter:blur(18px)!important;
   }
 
   body .navwrap .brand{
     display:flex!important;
     align-items:center!important;
     justify-content:flex-start!important;
-    gap:10px!important;
+    gap:9px!important;
     min-width:0!important;
-    max-width:calc(100% - 66px)!important;
+    max-width:calc(100% - 54px)!important;
     margin:0 auto 0 0!important;
     flex:1 1 auto!important;
   }
 
+  /* Same apparent size as the approved original; only the source is sharper. */
   body .navwrap .brand img{
     display:block!important;
-    width:auto!important;
-    height:46px!important;
-    max-width:30px!important;
-    max-height:46px!important;
+    width:38px!important;
+    height:27px!important;
+    max-width:38px!important;
+    max-height:27px!important;
     margin:0!important;
     padding:0!important;
     object-fit:contain!important;
@@ -52,27 +53,28 @@
     flex:0 0 auto!important;
     image-rendering:auto!important;
     filter:none!important;
+    transform:none!important;
   }
 
   body .navwrap .brand-name{
     min-width:0!important;
-    gap:4px!important;
+    gap:3px!important;
     overflow:visible!important;
   }
 
   body .navwrap .brand-name .n1{
-    font-size:18px!important;
+    font-size:16px!important;
     font-weight:800!important;
     line-height:1!important;
-    letter-spacing:.055em!important;
+    letter-spacing:.05em!important;
     white-space:nowrap!important;
   }
 
   body .navwrap .brand-name .n2{
-    font-size:8.2px!important;
+    font-size:7px!important;
     font-weight:600!important;
     line-height:1!important;
-    letter-spacing:.245em!important;
+    letter-spacing:.21em!important;
     white-space:nowrap!important;
   }
 
@@ -83,89 +85,49 @@
 
   body .navwrap .burger{
     display:flex!important;
-    width:56px!important;
-    height:56px!important;
-    min-width:56px!important;
-    min-height:56px!important;
+    width:44px!important;
+    height:44px!important;
+    min-width:44px!important;
+    min-height:44px!important;
     margin:0!important;
     padding:0!important;
     align-items:center!important;
     justify-content:center!important;
-    gap:6px!important;
+    gap:5px!important;
     border:0!important;
     border-radius:50%!important;
     background:#2e3480!important;
     box-shadow:none!important;
-    flex:0 0 56px!important;
+    flex:0 0 44px!important;
   }
 
   body .navwrap .burger span{
-    width:25px!important;
-    height:3px!important;
+    width:21px!important;
+    height:2.5px!important;
     background:#fff!important;
     border-radius:99px!important;
   }
 
   body .mobile-menu{
-    top:calc(max(12px,env(safe-area-inset-top)) + 84px)!important;
-    left:12px!important;
-    right:12px!important;
+    top:calc(max(12px,env(safe-area-inset-top)) + 66px)!important;
+    left:10px!important;
+    right:10px!important;
     width:auto!important;
-    max-height:calc(100dvh - 112px)!important;
+    max-height:calc(100dvh - 94px)!important;
     overflow:auto!important;
     z-index:9999!important;
-    border-radius:24px!important;
+    border-radius:22px!important;
   }
 
   body .mobile-menu a{
-    min-height:48px!important;
+    min-height:46px!important;
     display:flex!important;
     align-items:center!important;
   }
 }
 
-@media (max-width:390px){
-  body .navwrap .island{
-    height:72px!important;
-    min-height:72px!important;
-    padding-left:14px!important;
-  }
-
-  body .navwrap .brand{
-    gap:8px!important;
-    max-width:calc(100% - 60px)!important;
-  }
-
-  body .navwrap .brand img{
-    height:42px!important;
-    max-width:27px!important;
-    max-height:42px!important;
-  }
-
-  body .navwrap .brand-name .n1{
-    font-size:16px!important;
-    letter-spacing:.04em!important;
-  }
-
-  body .navwrap .brand-name .n2{
-    font-size:7px!important;
-    letter-spacing:.19em!important;
-  }
-
-  body .navwrap .burger{
-    width:52px!important;
-    height:52px!important;
-    min-width:52px!important;
-    min-height:52px!important;
-    flex-basis:52px!important;
-  }
-
-  body .mobile-menu{
-    top:calc(max(12px,env(safe-area-inset-top)) + 80px)!important;
-  }
-}
-
-@media (max-width:340px){
-  body .navwrap .brand-name .n1{font-size:14px!important}
-  body .navwrap .brand-name .n2{font-size:6.2px!important;letter-spacing:.14em!important}
+@media (max-width:350px){
+  body .navwrap .brand{gap:7px!important}
+  body .navwrap .brand-name .n1{font-size:14.5px!important}
+  body .navwrap .brand-name .n2{font-size:6.2px!important;letter-spacing:.16em!important}
 }
