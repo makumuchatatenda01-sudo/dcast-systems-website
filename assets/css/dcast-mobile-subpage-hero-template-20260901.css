@@ -217,7 +217,7 @@
     text-align:center!important;
   }
 
-  body .sys-hero-title br{display:none!important}
+  body .sys-hero-title br{display:initial!important}
   body .sys-hero-title .green{color:#55e2ab!important}
   body .sys-hero-visual,
   body .sys-feature-strip{display:none!important}
