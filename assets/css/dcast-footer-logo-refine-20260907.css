@@ -1,0 +1,22 @@
+/* DCAST_FOOTER_LOGO_REFINE_20260907
+   Keeps the original artwork while aligning the footer mark to its wording. */
+body .foot-logo{
+  align-items:center!important;
+  gap:.35rem!important;
+}
+
+body .foot-logo img{
+  width:auto!important;
+  height:46px!important;
+  object-fit:contain;
+  flex:0 0 auto;
+}
+
+body .foot-logo .brand-name{
+  align-self:center!important;
+  margin-top:0!important;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transform:none!important;
+}
